@@ -17886,6 +17886,7 @@ function renderRegionStores(r){
   ['store','area','spec','region','trend-all','eval'].forEach(x=>document.getElementById('page-'+x).classList.toggle('show',x==='region'));
   ['store','area','spec','trend-all','eval'].forEach(x=>document.getElementById('menu-'+x).classList.remove('active'));
 }
+function isClosedStore(s){const t=(s.t05_26||'').toLowerCase();return t.includes('폐점')||t.includes('해지');}
 function filterStores(){
   try{
     const raw=document.getElementById('si');
@@ -17900,7 +17901,7 @@ function filterStores(){
     const filt=(q
       ?STORE_DATA.filter(s=>s.name.toLowerCase().includes(q)||(s.code||'').toLowerCase().includes(q))
       :STORE_DATA.filter(s=>curR==='all'||s.region===curR)
-    ).slice().sort((a,b)=>a.name.localeCompare(b.name,'ko'));
+    ).slice().sort((a,b)=>{const ac=isClosedStore(a),bc=isClosedStore(b);if(ac!==bc)return ac?1:-1;return a.name.localeCompare(b.name,'ko');});
     const cntEl=document.getElementById('rcnt-all');
     if(cntEl)cntEl.textContent=filt.length;
     el.style.display='';
