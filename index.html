@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>로얄앤컴퍼니 전문점 정보 관리 대시보드</title><style>:root{--pri:#1a3a6b;--pri2:#2a5298;--acc:#e8a020;--acc2:#f5c842;--bg:#f0f2f7;--card:#fff;--txt:#1a1a2e;--txtl:#6b7280;--bdr:#e2e8f0;--sid:#152e58;--ok:#10b981;--warn:#f59e0b;--err:#ef4444;}*{box-sizing:border-box;margin:0;padding:0;}body{font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:var(--bg);color:var(--txt);display:flex;flex-direction:column;height:100vh;overflow:hidden;}.hdr{background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 12px rgba(0,0,0,.2);flex-shrink:0;z-index:100;}.hdr-left{display:flex;align-items:center;gap:14px;}.hdr-logo{font-size:20px;font-weight:800;color:var(--acc2);letter-spacing:-.5px;}.hdr-sep{width:1px;height:22px;background:rgba(255,255,255,.2);}.hdr-title{font-size:14px;color:rgba(255,255,255,.82);}.hdr-right{display:flex;align-items:center;gap:12px;}.hdr-badge{background:rgba(255,255,255,.15);border-radius:20px;padding:3px 12px;font-size:12px;color:rgba(255,255,255,.9);}.hdr-date{font-size:11px;color:rgba(255,255,255,.6);}.top-nav{background:var(--card);border-bottom:1px solid var(--bdr);padding:0 20px;height:44px;display:flex;align-items:center;gap:4px;flex-shrink:0;box-shadow:0 1px 4px rgba(0,0,0,.06);}.nav-btn{height:32px;padding:0 16px;border-radius:8px;border:none;cursor:pointer;font-size:13px;font-weight:600;color:var(--txtl);background:transparent;transition:all .15s;display:flex;align-items:center;gap:5px;}.nav-btn:hover{background:var(--bg);color:var(--txt);}.nav-btn.active{background:var(--pri);color:#fff;box-shadow:0 2px 8px rgba(26,58,107,.25);}.layout{display:flex;flex:1;overflow:hidden;}.sidebar{width:264px;background:var(--sid);color:#fff;display:flex;flex-direction:column;flex-shrink:0;box-shadow:2px 0 10px rgba(0,0,0,.18);}.sb-search{padding:11px 13px;border-bottom:1px solid rgba(255,255,255,.08);}.sb-search input{width:100%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:7px 11px;color:#fff;font-size:12px;outline:none;transition:all .2s;}.sb-search input::placeholder{color:rgba(255,255,255,.45);}.sb-search input:focus{background:rgba(255,255,255,.16);border-color:var(--acc);}.region-panel{border-bottom:1px solid rgba(255,255,255,.08);flex-shrink:0;}.region-btns{display:flex;flex-wrap:wrap;gap:3px;padding:8px 10px 6px;}.rbtn{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:20px;font-size:10px;font-weight:700;color:rgba(255,255,255,.65);background:rgba(255,255,255,.08);border:none;cursor:pointer;transition:all .15s;white-space:nowrap;}.rbtn:hover{background:rgba(255,255,255,.15);color:#fff;}.rbtn.active{background:var(--acc);color:#fff;}.rbtn-cnt{font-size:9px;background:rgba(255,255,255,.2);padding:1px 3px;border-radius:8px;margin-left:2px;}.rbtn.active .rbtn-cnt{background:rgba(255,255,255,.3);}.region-all{display:flex;align-items:center;justify-content:space-between;padding:9px 13px;cursor:pointer;background:rgba(255,255,255,.06);transition:all .15s;border-left:3px solid transparent;}.region-all:hover{background:rgba(255,255,255,.1);}.region-all.active{background:var(--acc);border-left-color:var(--acc);}.region-all-label{font-size:13px;font-weight:700;color:rgba(255,255,255,.9);}.region-all.active .region-all-label{color:var(--txt);}.region-all-cnt{font-size:11px;background:rgba(255,255,255,.15);padding:2px 8px;border-radius:10px;color:rgba(255,255,255,.8);}.region-all.active .region-all-cnt{background:rgba(0,0,0,.15);color:var(--txt);}.region-divider{padding:5px 13px 3px;font-size:9px;font-weight:700;color:rgba(255,255,255,.35);letter-spacing:.8px;text-transform:uppercase;}.region-item{display:flex;align-items:center;justify-content:space-between;padding:8px 13px 8px 18px;cursor:pointer;transition:all .15s;border-left:3px solid transparent;}.region-item:hover{background:rgba(255,255,255,.08);}.region-item.active{background:rgba(232,160,32,.18);border-left-color:var(--acc);}.ri-name{font-size:12px;color:rgba(255,255,255,.8);}.region-item.active .ri-name{color:var(--acc2);font-weight:700;}.ri-cnt{font-size:10px;background:rgba(255,255,255,.1);padding:2px 7px;border-radius:8px;color:rgba(255,255,255,.55);}.region-item.active .ri-cnt{background:rgba(232,160,32,.25);color:var(--acc2);}.store-list{flex:1;overflow-y:auto;padding:5px 0;}.store-list::-webkit-scrollbar{width:3px;}.store-list::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:2px;}
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>로얄앤컴퍼니 전문점 정보 관리 대시보드</title><style>:root{--pri:#1a3a6b;--pri2:#2a5298;--acc:#e8a020;--acc2:#f5c842;--bg:#f0f2f7;--card:#fff;--txt:#1a1a2e;--txtl:#6b7280;--bdr:#e2e8f0;--sid:#152e58;--ok:#10b981;--warn:#f59e0b;--err:#ef4444;}*{box-sizing:border-box;margin:0;padding:0;}body{font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:var(--bg);color:var(--txt);display:flex;flex-direction:column;height:100vh;overflow:hidden;}.hdr{background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 12px rgba(0,0,0,.2);flex-shrink:0;z-index:100;}.hdr-left{display:flex;align-items:center;gap:14px;}.hdr-logo{font-size:20px;font-weight:800;color:var(--acc2);letter-spacing:-.5px;}.hdr-sep{width:1px;height:22px;background:rgba(255,255,255,.2);}.hdr-title{font-size:14px;color:rgba(255,255,255,.82);}.hdr-right{display:flex;align-items:center;gap:12px;}.hdr-badge{background:rgba(255,255,255,.15);border-radius:20px;padding:3px 12px;font-size:12px;color:rgba(255,255,255,.9);}.hdr-date{font-size:11px;color:rgba(255,255,255,.6);}.top-nav{background:var(--card);border-bottom:1px solid var(--bdr);padding:0 20px;height:44px;display:flex;align-items:center;gap:4px;flex-shrink:0;box-shadow:0 1px 4px rgba(0,0,0,.06);}.nav-btn{height:32px;padding:0 16px;border-radius:8px;border:none;cursor:pointer;font-size:13px;font-weight:600;color:var(--txtl);background:transparent;transition:all .15s;display:flex;align-items:center;gap:5px;}.nav-btn:hover{background:var(--bg);color:var(--txt);}.nav-btn.active{background:var(--pri);color:#fff;box-shadow:0 2px 8px rgba(26,58,107,.25);}.layout{display:flex;flex:1;overflow:hidden;}.sidebar{width:264px;background:var(--sid);color:#fff;display:flex;flex-direction:column;flex-shrink:0;box-shadow:2px 0 10px rgba(0,0,0,.18);}.sb-search{padding:11px 13px;border-bottom:1px solid rgba(255,255,255,.08);}.sb-search input{width:100%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:7px 11px;color:#fff;font-size:12px;outline:none;transition:all .2s;}.sb-search input::placeholder{color:rgba(255,255,255,.45);}.sb-search input:focus{background:rgba(255,255,255,.16);border-color:var(--acc);}.region-panel{border-bottom:1px solid rgba(255,255,255,.08);flex-shrink:0;}.region-btns{display:flex;flex-wrap:wrap;gap:3px;padding:8px 10px 6px;}.rbtn{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:20px;font-size:10px;font-weight:700;color:rgba(255,255,255,.65);background:rgba(255,255,255,.08);border:none;cursor:pointer;transition:all .15s;white-space:nowrap;}.rbtn:hover{background:rgba(255,255,255,.15);color:#fff;}.rbtn.active{background:var(--acc);color:#fff;}.rbtn-cnt{font-size:9px;background:rgba(255,255,255,.2);padding:1px 3px;border-radius:8px;margin-left:2px;}.rbtn.active .rbtn-cnt{background:rgba(255,255,255,.3);}.region-all{display:flex;align-items:center;justify-content:space-between;padding:9px 13px;cursor:pointer;background:rgba(255,255,255,.06);transition:all .15s;border-left:3px solid transparent;}.region-all:hover{background:rgba(255,255,255,.1);}.region-all.active{background:var(--acc);border-left-color:var(--acc);}.region-all-label{font-size:13px;font-weight:700;color:rgba(255,255,255,.9);}.region-all.active .region-all-label{color:var(--txt);}.region-all-cnt{font-size:11px;background:rgba(255,255,255,.15);padding:2px 8px;border-radius:10px;color:rgba(255,255,255,.8);}.region-all.active .region-all-cnt{background:rgba(0,0,0,.15);color:var(--txt);}.region-divider{padding:5px 13px 3px;font-size:9px;font-weight:700;color:rgba(255,255,255,.35);letter-spacing:.8px;text-transform:uppercase;}.region-item{display:flex;align-items:center;justify-content:space-between;padding:8px 13px 8px 18px;cursor:pointer;transition:all .15s;border-left:3px solid transparent;}.region-item:hover{background:rgba(255,255,255,.08);}.region-item.active{background:rgba(232,160,32,.18);border-left-color:var(--acc);}.ri-name{font-size:12px;color:rgba(255,255,255,.8);}.region-item.active .ri-name{color:var(--acc2);font-weight:700;}.ri-cnt{font-size:10px;background:rgba(255,255,255,.1);padding:2px 7px;border-radius:8px;color:rgba(255,255,255,.55);}.region-item.active .ri-cnt{background:rgba(232,160,32,.25);color:var(--acc2);}.store-list{flex:1;overflow-y:auto;padding:5px 0;}.store-list::-webkit-scrollbar{width:3px;}.store-list::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:2px;}
 .store-btn-grid{display:flex;flex-wrap:wrap;gap:10px;padding:4px 0;}
 .store-btn{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--card);border:1px solid var(--bdr);border-radius:12px;cursor:pointer;transition:all .18s;box-shadow:0 1px 5px rgba(0,0,0,.06);min-width:160px;flex:1 1 160px;max-width:220px;}
 .store-btn:hover{border-color:var(--pri);box-shadow:0 3px 12px rgba(26,58,107,.15);transform:translateY(-1px);}
@@ -13,7 +13,7 @@
 .sb-ok{background:var(--ok);}.sb-warn{background:var(--warn);}.sb-err{background:var(--err);}
 .region-page-hdr{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
 .region-page-title{font-size:17px;font-weight:800;color:var(--pri);}
-.region-page-cnt{font-size:12px;background:var(--pri);color:#fff;padding:3px 10px;border-radius:12px;}.rgh{padding:7px 13px 3px;font-size:9px;font-weight:800;color:var(--acc2);letter-spacing:.8px;margin-top:5px;border-top:1px solid rgba(255,255,255,.05);}.store-item{display:flex;align-items:center;gap:8px;padding:8px 13px;cursor:pointer;transition:all .15s;border-left:3px solid transparent;}.store-item:hover{background:rgba(255,255,255,.07);}.store-item.active{background:rgba(232,160,32,.18);border-left-color:var(--acc);}.sno{width:20px;height:20px;background:rgba(255,255,255,.1);border-radius:50%;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:rgba(255,255,255,.7);}.store-item.active .sno{background:var(--acc);color:var(--txt);}.si{flex:1;min-width:0;}.sn{font-size:12px;font-weight:600;color:rgba(255,255,255,.9);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.store-item.active .sn{color:var(--acc2);}.sc{font-size:10px;color:rgba(255,255,255,.4);}.sdot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}.dok{background:var(--ok);}.dwarn{background:var(--warn);}.derr{background:var(--err);}.sb-footer{padding:7px 13px;border-top:1px solid rgba(255,255,255,.08);font-size:10px;color:rgba(255,255,255,.3);text-align:center;}.main{flex:1;overflow-y:auto;padding:18px 22px;}.main::-webkit-scrollbar{width:5px;}.main::-webkit-scrollbar-thumb{background:#cbd5e0;border-radius:3px;}.page{display:none;}.page.show{display:block;}.welcome{display:flex;flex-direction:column;align-items:center;justify-content:center;height:75vh;text-align:center;color:var(--txtl);}.welcome-icon{font-size:52px;margin-bottom:14px;opacity:.2;}.welcome h2{font-size:17px;margin-bottom:7px;}.welcome p{font-size:12px;}.shc{background:linear-gradient(135deg,#0d2040 0%,#1a3a6b 45%,#1e5799 100%);border-radius:13px;padding:17px 21px;margin-bottom:16px;color:#fff;box-shadow:0 6px 28px rgba(13,32,64,.35);position:relative;overflow:hidden;}.shc::before{content:"";position:absolute;top:-20px;right:-20px;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.05);}.shc-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:13px;}.shcna{display:flex;align-items:center;gap:10px;}.shcno{background:var(--acc);color:var(--txt);font-weight:800;font-size:12px;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}.shcname{font-size:21px;font-weight:800;letter-spacing:-.5px;}.shcreg{font-size:12px;color:rgba(255,255,255,.6);margin-top:2px;}.shc-badges{display:flex;gap:7px;flex-wrap:wrap;}.badge{padding:2px 7px;border-radius:20px;font-size:10px;font-weight:600;}.bcode{background:rgba(255,255,255,.15);color:rgba(255,255,255,.9);}.bok{background:rgba(16,185,129,.25);color:#6ee7b7;}.bwarn{background:rgba(245,158,11,.25);color:#fcd34d;}.berr{background:rgba(239,68,68,.25);color:#fca5a5;}.shcgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;}.shcf{background:rgba(255,255,255,.14);border-radius:8px;padding:8px 12px;border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(4px);}.shcfl{font-size:10px;color:rgba(255,255,255,.72);margin-bottom:3px;letter-spacing:.2px;font-weight:600;}.shcfv{font-size:12px;color:#fff;font-weight:700;line-height:1.5;white-space:pre-wrap;}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:14px;}.stat{background:var(--card);border-radius:10px;padding:12px;text-align:center;box-shadow:0 1px 5px rgba(0,0,0,.06);border:1px solid var(--bdr);}.statn{font-size:22px;font-weight:800;color:var(--pri);}.statl{font-size:10px;color:var(--txtl);margin-top:2px;}.dtabs{display:flex;gap:3px;margin-bottom:13px;flex-wrap:wrap;}.dtab{padding:7px 14px;border-radius:8px;border:none;cursor:pointer;font-size:12px;font-weight:600;background:var(--card);color:var(--txtl);box-shadow:0 1px 3px rgba(0,0,0,.06);transition:all .15s;}.dtab:hover{background:#e2e8f0;color:var(--txt);}.dtab.active{background:var(--pri);color:#fff;}.tcnt{background:rgba(255,255,255,.2);border-radius:10px;padding:1px 6px;font-size:9px;margin-left:3px;}.dtab:not(.active) .tcnt{background:var(--bg);color:var(--txtl);}.dp{display:none;}.dp.active{display:block;}.card{background:var(--card);border-radius:12px;padding:17px;box-shadow:0 1px 7px rgba(0,0,0,.06);border:1px solid var(--bdr);margin-bottom:13px;}.cardtitle{font-size:13px;font-weight:700;color:var(--pri);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--bg);display:flex;align-items:center;gap:7px;}.cbar{width:5px;height:15px;background:var(--acc);border-radius:3px;}.ig{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;}.il-l{font-size:10px;color:var(--txtl);margin-bottom:2px;font-weight:600;}.il-v{font-size:12px;color:var(--txt);line-height:1.5;white-space:pre-wrap;}.agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;}.az{background:var(--bg);border-radius:8px;padding:12px;border:1px solid var(--bdr);}.azt{font-size:11px;font-weight:700;color:var(--pri2);margin-bottom:5px;}.azd{font-size:12px;color:var(--txt);line-height:1.5;}.azf{font-size:10px;color:var(--txtl);margin-top:5px;padding-top:5px;border-top:1px dashed var(--bdr);}.twrap{overflow-x:auto;}table{width:100%;border-collapse:collapse;font-size:12px;}th{background:var(--bg);color:var(--txtl);font-weight:600;padding:7px 9px;text-align:left;white-space:nowrap;border-bottom:2px solid var(--bdr);font-size:11px;}td{padding:7px 9px;border-bottom:1px solid var(--bdr);vertical-align:top;line-height:1.4;}tr:hover td{background:#f8fafc;}.tempty{text-align:center;padding:24px;color:var(--txtl);font-size:12px;}.tg{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:8px;}.tc{background:var(--bg);border-radius:8px;padding:10px;border:1px solid var(--bdr);transition:all .15s;}.tc:hover{border-color:var(--pri);}.tcm{font-size:10px;font-weight:700;color:var(--pri2);margin-bottom:4px;display:flex;align-items:center;justify-content:space-between;}.tdot{width:5px;height:5px;border-radius:50%;}.tdon{background:var(--ok);}.tdoff{background:#cbd5e0;}.tct{font-size:11px;color:var(--txt);line-height:1.5;white-space:pre-wrap;}.tce{font-size:11px;color:var(--txtl);font-style:italic;}.mg{display:grid;grid-template-columns:1fr 1fr;gap:9px;}.mi{background:var(--bg);border-radius:8px;padding:12px;border:1px solid var(--bdr);}.mil{font-size:11px;font-weight:700;color:var(--pri);margin-bottom:4px;}.miv{font-size:12px;color:var(--txt);line-height:1.6;white-space:pre-wrap;}.nodata{color:var(--txtl);font-style:italic;font-size:12px;}.aag{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:11px;}.acard{background:var(--card);border-radius:11px;padding:15px;box-shadow:0 1px 5px rgba(0,0,0,.07);border:1px solid var(--bdr);cursor:pointer;transition:all .15s;}.acard:hover{border-color:var(--pri);box-shadow:0 3px 10px rgba(26,58,107,.13);transform:translateY(-1px);}.ach{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}.acn{font-size:14px;font-weight:700;color:var(--pri);}.acr{font-size:11px;background:var(--bg);padding:2px 8px;border-radius:7px;color:var(--txtl);}.acz{display:flex;flex-direction:column;gap:5px;}.azr{display:flex;gap:7px;align-items:flex-start;}.aztag{font-size:9px;font-weight:700;color:#fff;padding:2px 6px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:1px;}.t1{background:var(--ok);}.t2{background:var(--warn);}.t3{background:#8b5cf6;}.aztxt{font-size:11px;color:var(--txt);line-height:1.4;}.sf{display:flex;gap:9px;align-items:center;margin-bottom:13px;flex-wrap:wrap;}.sf input,.sf select{padding:7px 12px;border:1px solid var(--bdr);border-radius:8px;font-size:12px;outline:none;background:#fff;}.sf input{width:180px;}.sf input:focus,.sf select:focus{border-color:var(--pri);}.sfcnt{font-size:12px;color:var(--txtl);}.phdr{margin-bottom:15px;}.ptitle{font-size:16px;font-weight:800;color:var(--pri);margin-bottom:3px;}.psub{font-size:12px;color:var(--txtl);}.tal-cal{background:var(--card);border:1px solid var(--bdr);border-radius:10px;padding:8px 12px;display:inline-flex;align-items:center;gap:10px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06);}.tal-cal-hdr{display:flex;align-items:center;gap:6px;flex-shrink:0;}.tal-cal-year{font-size:13px;font-weight:800;color:var(--pri);white-space:nowrap;}.tal-cal-nav{width:22px;height:22px;border:1px solid var(--bdr);background:var(--card);border-radius:5px;cursor:pointer;font-size:13px;color:var(--pri2);display:flex;align-items:center;justify-content:center;transition:all .13s;}.tal-cal-nav:hover:not(:disabled){background:var(--pri);color:#fff;border-color:var(--pri);}.tal-cal-nav:disabled{color:var(--bdr);cursor:default;}.tal-cal-grid{display:flex;gap:6px;}.tal-cal-m{padding:4px 6px;text-align:center;border-radius:6px;font-size:11px;font-weight:600;color:#c5cdd8;cursor:default;border:1.5px solid transparent;transition:all .13s;white-space:nowrap;}.tal-cal-m.in-range{color:var(--txtl);border-color:var(--bdr);}.tal-cal-m.has-data{color:var(--pri);border-color:var(--pri2);background:#f0f4ff;cursor:pointer;}.tal-cal-m.has-data:hover{background:#dde8ff;border-color:var(--pri);}.tal-cal-m.active{background:var(--pri);color:#fff;border-color:var(--pri);box-shadow:0 2px 8px rgba(26,58,107,.22);}.tal-result{}.tal-result-hdr{display:flex;align-items:center;gap:10px;margin-bottom:12px;}.tal-result-month{font-size:15px;font-weight:800;color:var(--pri);}.tal-result-cnt{font-size:11px;background:var(--pri);color:#fff;padding:2px 9px;border-radius:12px;}.tal-entries{display:flex;flex-direction:column;gap:8px;}.tm-entry{display:flex;background:var(--card);border:1px solid var(--bdr);border-radius:10px;overflow:hidden;transition:box-shadow .12s;cursor:pointer;}.tm-entry:hover{box-shadow:0 3px 10px rgba(26,58,107,.1);border-color:var(--pri2);}.tm-entry-name{width:110px;flex-shrink:0;padding:12px 14px;font-size:12px;font-weight:700;color:var(--pri);border-right:1px solid var(--bdr);background:#f5f8ff;display:flex;flex-direction:column;gap:3px;justify-content:flex-start;}.tm-entry-reg{font-size:10px;color:var(--txtl);font-weight:400;}.tm-entry-txt{flex:1;padding:12px 16px;font-size:12px;color:var(--txt);line-height:1.6;white-space:pre-wrap;}.tal-empty{text-align:center;padding:40px;color:var(--txtl);font-size:13px;}.tal-nosel{text-align:center;padding:50px 20px;color:var(--txtl);}.tal-nosel-icon{font-size:36px;margin-bottom:10px;opacity:.3;}.tal-nosel-txt{font-size:13px;}.eval-grade-badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700;}.eg-best{background:#fff3cd;color:#856404;border:1px solid #ffc107;}.eg-good{background:#cfe2ff;color:#084298;border:1px solid #9ec5fe;}.eg-new{background:#d1e7dd;color:#0a3622;border:1px solid #a3cfbb;}.eval-table{width:100%;border-collapse:collapse;font-size:12px;}.eval-table th{background:var(--bg);color:var(--txtl);font-weight:600;padding:8px 10px;border-bottom:2px solid var(--bdr);}.eval-table td{padding:7px 10px;border-bottom:1px solid var(--bdr);vertical-align:middle;}.eval-table tbody tr:hover{background:#f5f8ff;cursor:pointer;}.eval-rank-num{font-weight:800;color:var(--pri);font-size:13px;text-align:center;}.emv-g{color:var(--ok);font-weight:700;}.emv-y{color:#d97706;font-weight:600;}.emv-r{color:var(--err);font-weight:600;}.emv-null{color:#cbd5e0;}.eval-sbar{display:flex;align-items:center;gap:5px;}.eval-sbar-val{width:32px;text-align:right;font-size:11px;font-weight:600;flex-shrink:0;}.eval-sbar-track{flex:1;height:5px;border-radius:3px;background:#e8ecf0;overflow:hidden;}.eval-mtable{width:100%;border-collapse:collapse;font-size:11px;}.eval-mtable th{background:var(--bg);color:var(--txtl);font-weight:600;padding:6px 8px;text-align:center;border:1px solid var(--bdr);}.eval-mtable td{padding:5px 7px;border:1px solid var(--bdr);text-align:center;vertical-align:middle;}.eval-sumrow td{background:#f0f4ff;font-weight:700;}.eval-period-bar{display:flex;gap:4px;align-items:center;flex-wrap:wrap;margin-bottom:14px;}.eval-period-sep{width:1px;height:18px;background:var(--bdr);margin:0 4px;flex-shrink:0;}.eval-period-btn{padding:4px 10px;border-radius:6px;border:1px solid var(--bdr);background:var(--card);font-size:11px;font-weight:600;color:var(--txtl);cursor:pointer;transition:all .12s;white-space:nowrap;}.eval-period-btn:hover{border-color:var(--pri2);color:var(--pri);}.eval-period-btn.active{background:var(--pri);color:#fff;border-color:var(--pri);}.eval-month-pills{display:flex;gap:3px;flex-wrap:wrap;margin-left:4px;}.eval-month-pill{padding:3px 7px;border-radius:5px;border:1px solid var(--bdr);background:var(--bg);font-size:10px;font-weight:600;color:var(--txtl);cursor:pointer;transition:all .12s;white-space:nowrap;}.eval-month-pill:hover{border-color:var(--pri2);color:var(--pri);}.eval-month-pill.active{background:var(--pri);color:#fff;border-color:var(--pri);}.eval-chart-wrap{background:var(--card);border:1px solid var(--bdr);border-radius:10px;padding:12px 16px;margin-bottom:14px;}.eval-chart-legend{display:flex;gap:16px;margin-bottom:8px;flex-wrap:wrap;}.eval-chart-legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--txtl);}.eval-chart-legend-line{height:2.5px;width:18px;border-radius:2px;display:inline-block;}.eval-period-summary{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;}.eps-item{flex:1;min-width:80px;background:var(--bg);border-radius:8px;padding:8px 12px;text-align:center;border:1px solid var(--bdr);}.eps-label{font-size:10px;color:var(--txtl);margin-bottom:3px;font-weight:600;letter-spacing:.1px;}.eps-val{font-size:18px;font-weight:800;color:var(--pri);line-height:1.2;}.eps-val.g{color:var(--ok);}.eps-val.y{color:#d97706;}.eps-val.r{color:var(--err);}.sb-nav{flex-shrink:0;}.sb-nav-all,.sb-nav-region{display:flex;align-items:center;justify-content:space-between;padding:11px 14px;cursor:pointer;transition:background .15s;color:rgba(255,255,255,.88);}.sb-nav-all:hover,.sb-nav-region:hover{background:rgba(255,255,255,.07);}.sb-nav-all{border-left:3px solid transparent;border-bottom:1px solid rgba(255,255,255,.06);}.sb-nav-all.active{background:rgba(232,160,32,.18);border-left-color:var(--acc);}.sb-nav-region{border-left:3px solid transparent;border-bottom:1px solid rgba(255,255,255,.08);}.sb-nav-region.ropen{background:rgba(255,255,255,.04);border-left-color:rgba(255,255,255,.25);}.snav-label{font-size:13px;font-weight:700;letter-spacing:-.2px;}.snav-cnt{font-size:11px;background:rgba(255,255,255,.13);border-radius:10px;padding:2px 8px;color:rgba(255,255,255,.75);}.snav-arrow{font-size:10px;color:rgba(255,255,255,.4);transition:transform .25s;}.snav-arrow.open{transform:rotate(-180deg);}.rg-toggle{cursor:pointer;display:flex;align-items:center;justify-content:space-between;user-select:none;}.rg-arrow{font-size:9px;color:rgba(255,255,255,.5);transition:all .2s;}.spec-exp{display:inline-block;background:#e74c3c;color:#fff;font-size:10px;font-weight:700;padding:1px 5px;border-radius:3px;vertical-align:middle;margin-right:4px;}.spec-new{display:inline-block;background:#27ae60;color:#fff;font-size:10px;font-weight:700;padding:1px 5px;border-radius:3px;vertical-align:middle;margin-right:4px;}</style></head><body><div class="hdr"><div class="hdr-left"><div class="hdr-logo">ROYAL</div><div class="hdr-sep"></div><div class="hdr-title">전문점 정보 관리 대시보드</div></div><div class="hdr-right"><button onclick="location.reload()" style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:4px 13px;color:#fff;font-size:12px;font-weight:600;cursor:pointer;transition:all .15s;" onmouseover="this.style.background='rgba(255,255,255,.25)'" onmouseout="this.style.background='rgba(255,255,255,.15)'">홈으로</button><div class="hdr-badge">전문점 37개</div><div class="hdr-date" id="hdrDate"></div></div></div><div class="top-nav"><button class="nav-btn active" onclick="switchPage('store')" id="menu-store">🏪 전문점별 정보</button><button class="nav-btn" onclick="switchPage('area')" id="menu-area">📍 관할구역</button><button class="nav-btn" onclick="switchPage('spec')" id="menu-spec">🏗 스펙현장</button><button class="nav-btn" onclick="switchPage('trend-all')" id="menu-trend-all">📅 전문점동향</button><button class="nav-btn" onclick="switchPage('eval')" id="menu-eval">📊 전문점평가</button></div><div class="layout"><div class="sidebar"><div class="sb-search"><input type="text" id="si" placeholder="전문점명·코드 검색..." oninput="filterStores()" onkeyup="filterStores()"></div><div class="region-panel"><div class="region-btns" id="regionBtns"><button class="rbtn active" id="rtab-all" onclick="setRegion('all')">전체<span class="rbtn-cnt" id="rcnt-all">37</span></button></div></div><div class="store-list" id="storeList"></div><div class="sb-footer">로얄앤컴퍼니 · 2026.06 기준</div></div><div class="main"><div class="page show" id="page-store"><div class="welcome" id="welcome"><div class="welcome-icon">🏪</div><h2>전문점을 선택하세요</h2><p>좌측에서 전문점을 클릭하면 상세 정보가 표시됩니다</p></div><div id="sd" style="display:none"><div class="shc" id="shcCard"></div><div class="stats" id="statsRow"></div><div class="dtabs"><button class="dtab active" onclick="sd('basic')">기본정보</button><button class="dtab" onclick="sd('area')">관할구역</button><button class="dtab" onclick="sd('spec')">스펙현장<span class="tcnt" id="scnt">0</span></button><button class="dtab" onclick="sd('trend')">월별동향</button><button class="dtab" onclick="sd('mgmt')">관리사항</button><button class="dtab" onclick="sd('eval')">📊 평가현황</button></div><div class="dp active" id="dp-basic"></div><div class="dp" id="dp-area"></div><div class="dp" id="dp-spec"></div><div class="dp" id="dp-trend"></div><div class="dp" id="dp-mgmt"></div><div class="dp" id="dp-eval"></div></div></div><div class="page" id="page-region"><div class="region-page-hdr"><div class="region-page-title" id="regionPageTitle"></div><div class="region-page-cnt" id="regionPageCnt"></div></div><div class="store-btn-grid" id="storeBtnGrid"></div></div><div class="page" id="page-area"><div class="phdr"><div class="ptitle">관할구역 현황</div><div class="psub">전문점별 1·2·3구역 담당지역 및 출장비 기준</div></div><div class="aag" id="aag"></div></div><div class="page" id="page-spec"><div class="phdr"><div class="ptitle">스펙현장 전체 목록</div><div class="psub" id="specSub">총 0건</div></div><div class="sf"><input type="text" id="specQ" placeholder="아파트명·주소 검색..." oninput="filterSpec()"><select id="specSF" onchange="filterSpec()"><option value="">전체 전문점</option></select><span class="sfcnt" id="sfcnt"></span></div><div class="card"><div class="twrap"><table><thead><tr><th>#</th><th>전문점</th><th>지역</th><th>아파트명</th><th style="min-width:180px">상세주소</th><th>입주/만료</th><th style="min-width:200px">제품명</th><th style="min-width:120px">납품</th><th>스펙코드</th><th>입주센터</th></tr></thead><tbody id="specBody"></tbody></table></div></div></div><div class="page" id="page-trend-all"><div class="phdr"><div class="ptitle">📅 전문점 동향</div><div class="psub" id="talSub"></div></div><div class="tal-month-bar" id="talMonthBar"></div><div class="tal-result" id="talResult"></div></div><div class="page" id="page-eval"><div class="phdr"><div class="ptitle">📊 전문점평가</div><div class="psub" id="evalSub"></div></div><div style="padding:12px 16px 20px"><div id="evalGrid"></div></div></div></div></div></div><script>const STORE_DATA=[
+.region-page-cnt{font-size:12px;background:var(--pri);color:#fff;padding:3px 10px;border-radius:12px;}.rgh{padding:7px 13px 3px;font-size:9px;font-weight:800;color:var(--acc2);letter-spacing:.8px;margin-top:5px;border-top:1px solid rgba(255,255,255,.05);}.store-item{display:flex;align-items:center;gap:8px;padding:8px 13px;cursor:pointer;transition:all .15s;border-left:3px solid transparent;}.store-item:hover{background:rgba(255,255,255,.07);}.store-item.active{background:rgba(232,160,32,.18);border-left-color:var(--acc);}.sno{width:20px;height:20px;background:rgba(255,255,255,.1);border-radius:50%;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:rgba(255,255,255,.7);}.store-item.active .sno{background:var(--acc);color:var(--txt);}.si{flex:1;min-width:0;}.sn{font-size:12px;font-weight:600;color:rgba(255,255,255,.9);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.store-item.active .sn{color:var(--acc2);}.sc{font-size:10px;color:rgba(255,255,255,.4);}.sdot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}.dok{background:var(--ok);}.dwarn{background:var(--warn);}.derr{background:var(--err);}.sb-footer{padding:7px 13px;border-top:1px solid rgba(255,255,255,.08);font-size:10px;color:rgba(255,255,255,.3);text-align:center;}.main{flex:1;overflow-y:auto;padding:18px 22px;}.main::-webkit-scrollbar{width:5px;}.main::-webkit-scrollbar-thumb{background:#cbd5e0;border-radius:3px;}.page{display:none;}.page.show{display:block;}.welcome{display:flex;flex-direction:column;align-items:center;justify-content:center;height:75vh;text-align:center;color:var(--txtl);}.welcome-icon{font-size:52px;margin-bottom:14px;opacity:.2;}.welcome h2{font-size:17px;margin-bottom:7px;}.welcome p{font-size:12px;}.shc{background:linear-gradient(135deg,#0d2040 0%,#1a3a6b 45%,#1e5799 100%);border-radius:13px;padding:17px 21px;margin-bottom:16px;color:#fff;box-shadow:0 6px 28px rgba(13,32,64,.35);position:relative;overflow:hidden;}.shc::before{content:"";position:absolute;top:-20px;right:-20px;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.05);}.shc-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:13px;}.shcna{display:flex;align-items:center;gap:10px;}.shcno{background:var(--acc);color:var(--txt);font-weight:800;font-size:12px;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}.shcname{font-size:21px;font-weight:800;letter-spacing:-.5px;}.shcreg{font-size:12px;color:rgba(255,255,255,.6);margin-top:2px;}.shc-badges{display:flex;gap:7px;flex-wrap:wrap;}.badge{padding:2px 7px;border-radius:20px;font-size:10px;font-weight:600;}.bcode{background:rgba(255,255,255,.15);color:rgba(255,255,255,.9);}.bok{background:rgba(16,185,129,.25);color:#6ee7b7;}.bwarn{background:rgba(245,158,11,.25);color:#fcd34d;}.berr{background:rgba(239,68,68,.25);color:#fca5a5;}.shcgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;}.shcf{background:rgba(255,255,255,.14);border-radius:8px;padding:8px 12px;border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(4px);}.shcfl{font-size:10px;color:rgba(255,255,255,.72);margin-bottom:3px;letter-spacing:.2px;font-weight:600;}.shcfv{font-size:12px;color:#fff;font-weight:700;line-height:1.5;white-space:pre-wrap;}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:14px;}.stat{background:var(--card);border-radius:10px;padding:12px;text-align:center;box-shadow:0 1px 5px rgba(0,0,0,.06);border:1px solid var(--bdr);}.statn{font-size:22px;font-weight:800;color:var(--pri);}.statl{font-size:10px;color:var(--txtl);margin-top:2px;}.dtabs{display:flex;gap:3px;margin-bottom:13px;flex-wrap:wrap;}.dtab{padding:7px 14px;border-radius:8px;border:none;cursor:pointer;font-size:12px;font-weight:600;background:var(--card);color:var(--txtl);box-shadow:0 1px 3px rgba(0,0,0,.06);transition:all .15s;}.dtab:hover{background:#e2e8f0;color:var(--txt);}.dtab.active{background:var(--pri);color:#fff;}.tcnt{background:rgba(255,255,255,.2);border-radius:10px;padding:1px 6px;font-size:9px;margin-left:3px;}.dtab:not(.active) .tcnt{background:var(--bg);color:var(--txtl);}.dp{display:none;}.dp.active{display:block;}.card{background:var(--card);border-radius:12px;padding:17px;box-shadow:0 1px 7px rgba(0,0,0,.06);border:1px solid var(--bdr);margin-bottom:13px;}.cardtitle{font-size:13px;font-weight:700;color:var(--pri);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--bg);display:flex;align-items:center;gap:7px;}.cbar{width:5px;height:15px;background:var(--acc);border-radius:3px;}.ig{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;}.il-l{font-size:10px;color:var(--txtl);margin-bottom:2px;font-weight:600;}.il-v{font-size:12px;color:var(--txt);line-height:1.5;white-space:pre-wrap;}.agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;}.az{background:var(--bg);border-radius:8px;padding:12px;border:1px solid var(--bdr);}.azt{font-size:11px;font-weight:700;color:var(--pri2);margin-bottom:5px;}.azd{font-size:12px;color:var(--txt);line-height:1.5;}.azf{font-size:10px;color:var(--txtl);margin-top:5px;padding-top:5px;border-top:1px dashed var(--bdr);}.twrap{overflow-x:auto;}table{width:100%;border-collapse:collapse;font-size:12px;}th{background:var(--bg);color:var(--txtl);font-weight:600;padding:7px 9px;text-align:left;white-space:nowrap;border-bottom:2px solid var(--bdr);font-size:11px;}td{padding:7px 9px;border-bottom:1px solid var(--bdr);vertical-align:top;line-height:1.4;}tr:hover td{background:#f8fafc;}.tempty{text-align:center;padding:24px;color:var(--txtl);font-size:12px;}.tg{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:8px;}.tc{background:var(--bg);border-radius:8px;padding:10px;border:1px solid var(--bdr);transition:all .15s;}.tc:hover{border-color:var(--pri);}.tcm{font-size:10px;font-weight:700;color:var(--pri2);margin-bottom:4px;display:flex;align-items:center;justify-content:space-between;}.tdot{width:5px;height:5px;border-radius:50%;}.tdon{background:var(--ok);}.tdoff{background:#cbd5e0;}.tct{font-size:11px;color:var(--txt);line-height:1.5;white-space:pre-wrap;}.tce{font-size:11px;color:var(--txtl);font-style:italic;}.mg{display:grid;grid-template-columns:1fr 1fr;gap:9px;}.mi{background:var(--bg);border-radius:8px;padding:12px;border:1px solid var(--bdr);}.mil{font-size:11px;font-weight:700;color:var(--pri);margin-bottom:4px;}.miv{font-size:12px;color:var(--txt);line-height:1.6;white-space:pre-wrap;}.nodata{color:var(--txtl);font-style:italic;font-size:12px;}.aag{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:11px;}.acard{background:var(--card);border-radius:11px;padding:15px;box-shadow:0 1px 5px rgba(0,0,0,.07);border:1px solid var(--bdr);cursor:pointer;transition:all .15s;}.acard:hover{border-color:var(--pri);box-shadow:0 3px 10px rgba(26,58,107,.13);transform:translateY(-1px);}.ach{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}.acn{font-size:14px;font-weight:700;color:var(--pri);}.acr{font-size:11px;background:var(--bg);padding:2px 8px;border-radius:7px;color:var(--txtl);}.acz{display:flex;flex-direction:column;gap:5px;}.azr{display:flex;gap:7px;align-items:flex-start;}.aztag{font-size:9px;font-weight:700;color:#fff;padding:2px 6px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:1px;}.t1{background:var(--ok);}.t2{background:var(--warn);}.t3{background:#8b5cf6;}.aztxt{font-size:11px;color:var(--txt);line-height:1.4;}.sf{display:flex;gap:9px;align-items:center;margin-bottom:13px;flex-wrap:wrap;}.sf input,.sf select{padding:7px 12px;border:1px solid var(--bdr);border-radius:8px;font-size:12px;outline:none;background:#fff;}.sf input{width:180px;}.sf input:focus,.sf select:focus{border-color:var(--pri);}.sfcnt{font-size:12px;color:var(--txtl);}.phdr{margin-bottom:15px;}.ptitle{font-size:16px;font-weight:800;color:var(--pri);margin-bottom:3px;}.psub{font-size:12px;color:var(--txtl);}.tal-cal{background:var(--card);border:1px solid var(--bdr);border-radius:10px;padding:8px 12px;display:inline-flex;align-items:center;gap:10px;margin-bottom:14px;box-shadow:0 1px 6px rgba(0,0,0,.06);}.tal-cal-hdr{display:flex;align-items:center;gap:6px;flex-shrink:0;}.tal-cal-year{font-size:13px;font-weight:800;color:var(--pri);white-space:nowrap;}.tal-cal-nav{width:22px;height:22px;border:1px solid var(--bdr);background:var(--card);border-radius:5px;cursor:pointer;font-size:13px;color:var(--pri2);display:flex;align-items:center;justify-content:center;transition:all .13s;}.tal-cal-nav:hover:not(:disabled){background:var(--pri);color:#fff;border-color:var(--pri);}.tal-cal-nav:disabled{color:var(--bdr);cursor:default;}.tal-cal-grid{display:flex;gap:6px;}.tal-cal-m{padding:4px 6px;text-align:center;border-radius:6px;font-size:11px;font-weight:600;color:#c5cdd8;cursor:default;border:1.5px solid transparent;transition:all .13s;white-space:nowrap;}.tal-cal-m.in-range{color:var(--txtl);border-color:var(--bdr);}.tal-cal-m.has-data{color:var(--pri);border-color:var(--pri2);background:#f0f4ff;cursor:pointer;}.tal-cal-m.has-data:hover{background:#dde8ff;border-color:var(--pri);}.tal-cal-m.active{background:var(--pri);color:#fff;border-color:var(--pri);box-shadow:0 2px 8px rgba(26,58,107,.22);}.tal-result{}.tal-result-hdr{display:flex;align-items:center;gap:10px;margin-bottom:12px;}.tal-result-month{font-size:15px;font-weight:800;color:var(--pri);}.tal-result-cnt{font-size:11px;background:var(--pri);color:#fff;padding:2px 9px;border-radius:12px;}.tal-entries{display:flex;flex-direction:column;gap:8px;}.tm-entry{display:flex;background:var(--card);border:1px solid var(--bdr);border-radius:10px;overflow:hidden;transition:box-shadow .12s;cursor:pointer;}.tm-entry:hover{box-shadow:0 3px 10px rgba(26,58,107,.1);border-color:var(--pri2);}.tm-entry-name{width:110px;flex-shrink:0;padding:12px 14px;font-size:12px;font-weight:700;color:var(--pri);border-right:1px solid var(--bdr);background:#f5f8ff;display:flex;flex-direction:column;gap:3px;justify-content:flex-start;}.tm-entry-reg{font-size:10px;color:var(--txtl);font-weight:400;}.tm-entry-txt{flex:1;padding:12px 16px;font-size:12px;color:var(--txt);line-height:1.6;white-space:pre-wrap;}.tal-empty{text-align:center;padding:40px;color:var(--txtl);font-size:13px;}.tal-nosel{text-align:center;padding:50px 20px;color:var(--txtl);}.tal-nosel-icon{font-size:36px;margin-bottom:10px;opacity:.3;}.tal-nosel-txt{font-size:13px;}.eval-grade-badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700;}.eg-best{background:#fff3cd;color:#856404;border:1px solid #ffc107;}.eg-good{background:#cfe2ff;color:#084298;border:1px solid #9ec5fe;}.eg-new{background:#d1e7dd;color:#0a3622;border:1px solid #a3cfbb;}.eval-table{width:100%;border-collapse:collapse;font-size:12px;}.eval-table th{background:var(--bg);color:var(--txtl);font-weight:600;padding:8px 10px;border-bottom:2px solid var(--bdr);}.eval-table td{padding:7px 10px;border-bottom:1px solid var(--bdr);vertical-align:middle;}.eval-table tbody tr:hover{background:#f5f8ff;cursor:pointer;}.eval-rank-num{font-weight:800;color:var(--pri);font-size:13px;text-align:center;}.emv-g{color:var(--ok);font-weight:700;}.emv-y{color:#d97706;font-weight:600;}.emv-r{color:var(--err);font-weight:600;}.emv-null{color:#cbd5e0;}.eval-sbar{display:flex;align-items:center;gap:5px;}.eval-sbar-val{width:32px;text-align:right;font-size:11px;font-weight:600;flex-shrink:0;}.eval-sbar-track{flex:1;height:5px;border-radius:3px;background:#e8ecf0;overflow:hidden;}.eval-mtable{width:100%;border-collapse:collapse;font-size:11px;}.eval-mtable th{background:var(--bg);color:var(--txtl);font-weight:600;padding:6px 8px;text-align:center;border:1px solid var(--bdr);}.eval-mtable td{padding:5px 7px;border:1px solid var(--bdr);text-align:center;vertical-align:middle;}.eval-sumrow td{background:#f0f4ff;font-weight:700;}.eval-period-bar{display:flex;gap:4px;align-items:center;flex-wrap:wrap;margin-bottom:14px;}.eval-period-sep{width:1px;height:18px;background:var(--bdr);margin:0 4px;flex-shrink:0;}.eval-period-btn{padding:4px 10px;border-radius:6px;border:1px solid var(--bdr);background:var(--card);font-size:11px;font-weight:600;color:var(--txtl);cursor:pointer;transition:all .12s;white-space:nowrap;}.eval-period-btn:hover{border-color:var(--pri2);color:var(--pri);}.eval-period-btn.active{background:var(--pri);color:#fff;border-color:var(--pri);}.eval-month-pills{display:flex;gap:3px;flex-wrap:wrap;margin-left:4px;}.eval-month-pill{padding:3px 7px;border-radius:5px;border:1px solid var(--bdr);background:var(--bg);font-size:10px;font-weight:600;color:var(--txtl);cursor:pointer;transition:all .12s;white-space:nowrap;}.eval-month-pill:hover{border-color:var(--pri2);color:var(--pri);}.eval-month-pill.active{background:var(--pri);color:#fff;border-color:var(--pri);}.eval-chart-wrap{background:var(--card);border:1px solid var(--bdr);border-radius:10px;padding:12px 16px;margin-bottom:14px;}.eval-chart-legend{display:flex;gap:16px;margin-bottom:8px;flex-wrap:wrap;}.eval-chart-legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--txtl);}.eval-chart-legend-line{height:2.5px;width:18px;border-radius:2px;display:inline-block;}.eval-period-summary{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;}.eps-item{flex:1;min-width:80px;background:var(--bg);border-radius:8px;padding:8px 12px;text-align:center;border:1px solid var(--bdr);}.eps-label{font-size:10px;color:var(--txtl);margin-bottom:3px;font-weight:600;letter-spacing:.1px;}.eps-val{font-size:18px;font-weight:800;color:var(--pri);line-height:1.2;}.eps-val.g{color:var(--ok);}.eps-val.y{color:#d97706;}.eps-val.r{color:var(--err);}.sb-nav{flex-shrink:0;}.sb-nav-all,.sb-nav-region{display:flex;align-items:center;justify-content:space-between;padding:11px 14px;cursor:pointer;transition:background .15s;color:rgba(255,255,255,.88);}.sb-nav-all:hover,.sb-nav-region:hover{background:rgba(255,255,255,.07);}.sb-nav-all{border-left:3px solid transparent;border-bottom:1px solid rgba(255,255,255,.06);}.sb-nav-all.active{background:rgba(232,160,32,.18);border-left-color:var(--acc);}.sb-nav-region{border-left:3px solid transparent;border-bottom:1px solid rgba(255,255,255,.08);}.sb-nav-region.ropen{background:rgba(255,255,255,.04);border-left-color:rgba(255,255,255,.25);}.snav-label{font-size:13px;font-weight:700;letter-spacing:-.2px;}.snav-cnt{font-size:11px;background:rgba(255,255,255,.13);border-radius:10px;padding:2px 8px;color:rgba(255,255,255,.75);}.snav-arrow{font-size:10px;color:rgba(255,255,255,.4);transition:transform .25s;}.snav-arrow.open{transform:rotate(-180deg);}.rg-toggle{cursor:pointer;display:flex;align-items:center;justify-content:space-between;user-select:none;}.rg-arrow{font-size:9px;color:rgba(255,255,255,.5);transition:all .2s;}.spec-exp{display:inline-block;background:#e74c3c;color:#fff;font-size:10px;font-weight:700;padding:1px 5px;border-radius:3px;vertical-align:middle;margin-right:4px;}.spec-new{display:inline-block;background:#27ae60;color:#fff;font-size:10px;font-weight:700;padding:1px 5px;border-radius:3px;vertical-align:middle;margin-right:4px;}</style></head><body><div class="hdr"><div class="hdr-left"><div class="hdr-logo">ROYAL</div><div class="hdr-sep"></div><div class="hdr-title">전문점 정보 관리 대시보드</div></div><div class="hdr-right"><button onclick="location.reload()" style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:4px 13px;color:#fff;font-size:12px;font-weight:600;cursor:pointer;transition:all .15s;margin-right:6px;" onmouseover="this.style.background='rgba(255,255,255,.25)'" onmouseout="this.style.background='rgba(255,255,255,.15)'">↻ 새로고침</button><button onclick="location.reload()" style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:4px 13px;color:#fff;font-size:12px;font-weight:600;cursor:pointer;transition:all .15s;" onmouseover="this.style.background='rgba(255,255,255,.25)'" onmouseout="this.style.background='rgba(255,255,255,.15)'">홈으로</button><div class="hdr-badge">전문점 37개</div><div class="hdr-date" id="hdrDate"></div></div></div><div class="top-nav"><button class="nav-btn active" onclick="switchPage('store')" id="menu-store">🏪 전문점별 정보</button><button class="nav-btn" onclick="switchPage('area')" id="menu-area">📍 관할구역</button><button class="nav-btn" onclick="switchPage('spec')" id="menu-spec">🏗 스펙현장</button><button class="nav-btn" onclick="switchPage('trend-all')" id="menu-trend-all">📅 전문점동향</button><button class="nav-btn" onclick="switchPage('eval')" id="menu-eval">📊 전문점평가</button></div><div class="layout"><div class="sidebar"><div class="sb-search"><input type="text" id="si" placeholder="전문점명·코드 검색..." oninput="filterStores()" onkeyup="filterStores()"></div><div class="region-panel"><div class="region-btns" id="regionBtns"><button class="rbtn active" id="rtab-all" onclick="setRegion('all')">전체<span class="rbtn-cnt" id="rcnt-all">37</span></button></div></div><div class="store-list" id="storeList"></div><div class="sb-footer">로얄앤컴퍼니 · 2026.06 기준</div></div><div class="main"><div class="page show" id="page-store"><div class="welcome" id="welcome"><div class="welcome-icon">🏪</div><h2>전문점을 선택하세요</h2><p>좌측에서 전문점을 클릭하면 상세 정보가 표시됩니다</p></div><div id="sd" style="display:none"><div class="shc" id="shcCard"></div><div class="stats" id="statsRow"></div><div class="dtabs"><button class="dtab active" onclick="sd('basic')">기본정보</button><button class="dtab" onclick="sd('area')">관할구역</button><button class="dtab" onclick="sd('spec')">스펙현장<span class="tcnt" id="scnt">0</span></button><button class="dtab" onclick="sd('trend')">월별동향</button><button class="dtab" onclick="sd('mgmt')">관리사항</button><button class="dtab" onclick="sd('eval')">📊 평가현황</button></div><div class="dp active" id="dp-basic"></div><div class="dp" id="dp-area"></div><div class="dp" id="dp-spec"></div><div class="dp" id="dp-trend"></div><div class="dp" id="dp-mgmt"></div><div class="dp" id="dp-eval"></div></div></div><div class="page" id="page-region"><div class="region-page-hdr"><div class="region-page-title" id="regionPageTitle"></div><div class="region-page-cnt" id="regionPageCnt"></div></div><div class="store-btn-grid" id="storeBtnGrid"></div></div><div class="page" id="page-area"><div class="phdr"><div class="ptitle">관할구역 현황</div><div class="psub">전문점별 1·2·3구역 담당지역 및 출장비 기준</div></div><div class="aag" id="aag"></div></div><div class="page" id="page-spec"><div class="phdr"><div class="ptitle">스펙현장 전체 목록</div><div class="psub" id="specSub">총 0건</div></div><div class="sf"><input type="text" id="specQ" placeholder="아파트명·주소 검색..." oninput="filterSpec()"><select id="specSF" onchange="filterSpec()"><option value="">전체 전문점</option></select><span class="sfcnt" id="sfcnt"></span></div><div class="card"><div class="twrap"><table><thead><tr><th>#</th><th>전문점</th><th>지역</th><th>아파트명</th><th style="min-width:180px">상세주소</th><th>입주/만료</th><th style="min-width:200px">제품명</th><th style="min-width:120px">납품</th><th>스펙코드</th><th>입주센터</th></tr></thead><tbody id="specBody"></tbody></table></div></div></div><div class="page" id="page-trend-all"><div class="phdr"><div class="ptitle">📅 전문점 동향</div><div class="psub" id="talSub"></div></div><div class="tal-month-bar" id="talMonthBar"></div><div class="tal-result" id="talResult"></div></div><div class="page" id="page-eval"><div class="phdr"><div class="ptitle">📊 전문점평가</div><div class="eval-period-bar" id="evalYearTabs" style="margin-bottom:6px"><button class="eval-period-btn eval-year-btn active" data-year="2025" onclick="switchEvalYear(2025)">2025년</button><button class="eval-period-btn eval-year-btn" data-year="2026" onclick="switchEvalYear(2026)">2026년 (1~6월)</button></div><div class="psub" id="evalSub"></div></div><div style="padding:12px 16px 20px"><div id="evalGrid"></div></div></div></div></div></div><script>const STORE_DATA=[
     {
         "region":      "서울경기",
         "no":          "1",
@@ -44,7 +44,8 @@
         "t02_26": "강남지역 블로이등 신제품 위주 AS부속요청건이 많은데\n신제품 부속 재고가 없는경우 장기대기로 인한 고객독촉이 심함\n(신제품은 AS용 품번이 미리 설정 되어있지 않은 경우가 빈번하여, 후속처리후 진행하려면 시간소요가 많아 고객불만으로 이어지는 경우가 다발) \n(영업 박윤호대리 의견)",
         "t03_26": "",
         "t04_26": "",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": "블로이 비데 선제대응 및 예비부품(2셋트) 보유서비스정책에 \n협조적"
     },
     {
         "region":      "서울경기",
@@ -76,7 +77,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": "-6월13일~6월18일 여름휴가\n -양평지역 7월까지 AS한다고함"
     },
     {
         "region":      "서울경기",
@@ -108,7 +110,8 @@
         "t02_26": "-2025년 연간평가 우수전문점으로 \n  선정되어 상패 및 부상(RB1730\n  비데2대) 시상 예정\n -경기동부로얄 관할지역 중 가평 \n  지역 이관받아 3월부터 AS예정",
         "t03_26": "-3월부터 가평지역 AS수행(경기동부 이관지역)",
         "t04_26": "- 박성호과장 동행 현장실습 (강북에서 박성호과장 수전류 교육)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "서울경기",
@@ -140,7 +143,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "서울경기",
@@ -172,7 +176,8 @@
         "t02_26": "4분기 평가결과(F)에 대한 강한불만 표현, 처리건수가 적은전문점에 대한 정성평가 요청 => 전문점 평가기준항목중 협조도 안내, 협조항목에 대한 참여기회 확대검토",
         "t03_26": "전문점평가결과 및 방식에 따른 불만표현, 서비스 수행건수가 적어 만족도조사등 불이익이 발생할수 있는 항목에 대한 개선요청 => 정량평가방법 설명 및 협조도 점수획득하는 방법 안내",
         "t04_26": "밴드 참여도 높아짐",
-        "t05_26": "적극적인 활동으로 고객만족도 및 협조도가 향상되어 4월 전문점 평가 순위가 26위에서 13위로 상승함.\n(계속적인 동기부여와 독려필요)"
+        "t05_26": "적극적인 활동으로 고객만족도 및 협조도가 향상되어 4월 전문점 평가 순위가 26위에서 13위로 상승함.\n(계속적인 동기부여와 독려필요)",
+        "t06_26": ""
     },
     {
         "region":      "서울경기",
@@ -204,7 +209,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "신제품 공지를 못받았다고 하여 \"로얄소식지\" 및 신제품 자료 재안내",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "서울경기",
@@ -236,7 +242,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "서울경기",
@@ -268,7 +275,8 @@
         "t02_26": "",
         "t03_26": "-3월부터 서울 강동 지역 AS수행 \n  (경기동부 이관지역)\n  *송파는 4월부터 AS예정으로\n   현재 본사CX에서 대응 중",
         "t04_26": "",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": "6월26일~6월28일 여름 휴가"
     },
     {
         "region":      "서울경기",
@@ -300,7 +308,8 @@
         "t02_26": "2025년 연간평가 최우수전문점으로 선정되어 상패 및 부상(RB1730비데4대) 시상 예정.\n그레이스리 호텔 네오템프 서비스 접수시 즉시 대응중",
         "t03_26": "",
         "t04_26": "",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": "블로이 비데 선제대응 및 예비부품(2셋트) 보유서비스정책에 협조적"
     },
     {
         "region":      "서울경기",
@@ -332,7 +341,8 @@
         "t02_26": "경기동부 2월말부로 AS종료.\n3월부터 대체점에서 관할지역AS수행.\n -강동/송파 : 서울동부\n -가평: 강북로얄\n -성남: 용인로얄",
         "t03_26": "폐점",
         "t04_26": "폐점",
-        "t05_26": "폐점"
+        "t05_26": "폐점",
+        "t06_26": "폐점"
     },
     {
         "region":      "서울경기",
@@ -364,7 +374,8 @@
         "t02_26": "91901W 장기미입고로 AS대응어려웠으나\n2/5 800개 입고 완료",
         "t03_26": "RB3500 부속류 수급이 빨리 안되는 \n것에 대한 어려움토로\n( 특히 대방현장)",
         "t04_26": "",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": "신장자용 밸브 부품(67175MS) 공급 요청. => 생산/구매로 수급요청상태. 31033(신창금속) 기존 납품업체 폐업으로 구매에서 신규업체 섭외 중)"
     },
     {
         "region":      "서울경기",
@@ -396,7 +407,8 @@
         "t02_26": "",
         "t03_26": "-3월부터 성남 지역 AS수행 \n  (경기동부 이관지역)",
         "t04_26": "",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": "두산건설 스펙현장(두산위브광주\n센트럴파크) 홈바스 청구건 대행료 협의완료. 7월부터 조정된 대행료로 청구예정"
     },
     {
         "region":      "서울경기",
@@ -428,7 +440,8 @@
         "t02_26": "부천로얄 2/10부로 AS종료.\n2/11부터 인천동부에서 관할지역 AS수행.",
         "t03_26": "AS종료",
         "t04_26": "AS종료",
-        "t05_26": "AS비용 정산종료로 미수금 정리 후 해지절차 진행 예정(영업)"
+        "t05_26": "AS비용 정산종료로 미수금 정리 후 해지절차 진행 예정(영업)",
+        "t06_26": "해지절차 진행중(영업)"
     },
     {
         "region":      "인천",
@@ -460,7 +473,8 @@
         "t02_26": "91901W 장기미입고로 AS대응어려웠으나\n2/5 500개 입고 완료",
         "t03_26": "금강주택 RKSM30 74311W&B 프리픽스호스 소음문제로 부품출고했으나, 개선전 부품수령\n하여 확인요청\n=>생산관리팀에 확인요청결과 기존품과 개선품 혼입 문제가 있어, 전량 개선품으로 재입고작업 후\n인천서부로얄에 안내 완료 (3/23, CX)",
         "t04_26": "전문점 개설전부터 안면이 있었던\n인천동부로얄이 전문점으로 합류하면서 시너지 효과를 내고 있음\n(전문점 평가순위 동반상승. 3월평가 2위)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "인천",
@@ -472,7 +486,7 @@
         "tech":        "최재민 010-2909-1764",
         "addr":        "경기도 부천시 원미구 정주로53, 313호",
         "fax":         "032-232-8737",
-        "openDate":    "#",
+        "openDate":    "2025.11",
         "area1":       "남동구, 동구, 미추홀구",
         "area2":       "",
         "area3":       "",
@@ -492,7 +506,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "작년11월 개설이래 최초로 3월 전문점평가에서 1위에 오름.\n(2월부터 부천로얄 지역 인수하여 원활히 수행중이며, 서비스대응 및 본사협조 우수)",
-        "t05_26": "전문점 4월평가에서 3월에 이어\n연속 1위 달성.\n(전문점 사장과 기사 태도 매우 적극적, 긍정적으로 신규 전문점의 성공적인 안착사례)"
+        "t05_26": "전문점 4월평가에서 3월에 이어\n연속 1위 달성.\n(전문점 사장과 기사 태도 매우 적극적, 긍정적으로 신규 전문점의 성공적인 안착사례)",
+        "t06_26": ""
     },
     {
         "region":      "강원",
@@ -524,7 +539,8 @@
         "t02_26": "",
         "t03_26": "-장인분 건강이 안좋아서\n일 도와드리러 목금 서울로 올라오심\n -지역분배요청이 있었으나 미진행",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "강원",
@@ -556,7 +572,8 @@
         "t02_26": "제품 부품에 대해 찾는방법을 모른다고 하셔서, 가족홈페이지에서 부품분해도 보는 방법 재안내  및 관할지역 스펙현장에 대한 제품 및 구성품 자료 전달",
         "t03_26": "",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "충남",
@@ -588,7 +605,8 @@
         "t02_26": "",
         "t03_26": "화성본사 방문하여 직원들 인사",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": "-6월16일~6월20일 여름휴가\n -블로이 비데 신속처리를 위하여 예비부품 1셋트 보유서비스 시행"
     },
     {
         "region":      "충남",
@@ -620,7 +638,8 @@
         "t02_26": "홍성, 태안 서비스 불가로 대체점 필요",
         "t03_26": "홍성지역은 서비스 해보겠다고 함. (김성진 차장)",
         "t04_26": "홍성지역 서비스 제안했으나, 거절",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "충남",
@@ -652,7 +671,8 @@
         "t02_26": "AS대행료 (12월) 지급관련 후속진행.",
         "t03_26": "폐점. 12월 AS대행료 빠른 지급요청.\n=> 4월 15일까지 지급약속",
         "t04_26": "폐점.\n12월 AS대행료 4/21 지급완료\n(추후 발생비용 없음)",
-        "t05_26": "폐점"
+        "t05_26": "폐점",
+        "t06_26": "폐점"
     },
     {
         "region":      "충남",
@@ -684,7 +704,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "충북",
@@ -716,7 +737,8 @@
         "t02_26": "",
         "t03_26": "지방 전문점 기술교육시 장소제공\n - 4/3(금) 약16개 전문점 참여",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육 시 장소제공(4/3)",
-        "t05_26": "-어머니 쓰러지셔서 병간호와 병행하며 AS하고 있어 당분간 신속 대응 어려움\n -RKSP30-DG 프리픽스 처짐불량 대응중(더샵청주그리니티)"
+        "t05_26": "-어머니 쓰러지셔서 병간호와 병행하며 AS하고 있어 당분간 신속 대응 어려움\n -RKSP30-DG 프리픽스 처짐불량 대응중(더샵청주그리니티)",
+        "t06_26": ""
     },
     {
         "region":      "호남",
@@ -748,7 +770,8 @@
         "t02_26": "",
         "t03_26": "기술사원 변경 : 김일권부장 후임으로 정원기실장이 인수인계받아 3월부터 AS수행 중.",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": "블로이 비데 신속처리를 위하여 예비부품 1셋트 보유서비스 시행"
     },
     {
         "region":      "호남",
@@ -780,7 +803,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": "블로이 비데 신속처리를 위하여 예비부품 1셋트 보유서비스 시행"
     },
     {
         "region":      "호남",
@@ -812,7 +836,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "RKSP30-DG 프리픽스 처짐불량 대응중(더샵군산디오션시티그랑시엘, 더샵군산프리미엘)",
-        "t05_26": "RKSP30-DG 프리픽스 처짐불량 대응중(더샵군산디오션시티그랑시엘, 더샵군산프리미엘)"
+        "t05_26": "RKSP30-DG 프리픽스 처짐불량 대응중(더샵군산디오션시티그랑시엘, 더샵군산프리미엘)",
+        "t06_26": "- 블로이 비데 신속처리를 위하여 예비부품 1셋트 보유서비스 시행\n- 15190 (자폐밸브) 부품수급요청 => 7/6입고완료"
     },
     {
         "region":      "대구",
@@ -844,7 +869,8 @@
         "t02_26": "신천동 더샵디어엘로 RKSP30-DG  싱크수전 목처짐 대량 접수(2월 98건 접수)\n*커뮤니티에 내용 공유되며 대량접수 => 본사지원요청하여 내부 검토필요",
         "t03_26": "포스코 더샵디어엘로 RKSP30-DG 프리픽스처짐 대량접수건(200건) 외주업체 현장대응(150건) 후 잔여건 대응하기로 함.",
         "t04_26": "-RKSP30-DG 프리픽스 처짐불량 대응중(대구신천 더샵디어엘로)\n -지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": "RKSP30-DG 프리픽스 처짐불량 대응중(대구신천 더샵디어엘로)"
+        "t05_26": "RKSP30-DG 프리픽스 처짐불량 대응중(대구신천 더샵디어엘로)",
+        "t06_26": ""
     },
     {
         "region":      "대구",
@@ -876,7 +902,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": "온라인 가격 준수 상담 (욕바스), 전문점평가 점수 향상에 대한 상담 (온라인 가격준수여부도 협조도에 반영안내)"
+        "t05_26": "온라인 가격 준수 상담 (욕바스), 전문점평가 점수 향상에 대한 상담 (온라인 가격준수여부도 협조도에 반영안내)",
+        "t06_26": "센서내장형 소변기 부품입고요청 : 7/17 입고 예정"
     },
     {
         "region":      "대구",
@@ -908,7 +935,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "경북",
@@ -940,7 +968,8 @@
         "t02_26": "해모로시티 싱크수전 유량적음불만 세대 대응중",
         "t03_26": "",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "경북",
@@ -972,7 +1001,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "경남",
@@ -1004,7 +1034,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "경남",
@@ -1036,7 +1067,8 @@
         "t02_26": "마산로얄 전문점평가결과에 적극적으로 관심보여\n평가기준 및 관리팁 안내\n특히, 현재 잔여 미처리건이 많아 일정관리의 중요성 강조 및 처리 독려함(2/27)",
         "t03_26": "거제 지역 집단현장 대량접수 (2월~3월 82건)\n디클리브 RKSP30-DG 호스목처짐, RB1650 누수, 포레스트 RWL711A-1P 크랙 및 오버플로우캡 변색등.\n=> 마산로얄은 현재 주1회 이상은 자체대응 어려워 거제거주 외부인력 섭외 모색 및 본사지원 요청",
         "t04_26": "-더샵거제디클리브현장\n   RKSP30-DG 프리픽스호스처짐 \n   대량 미처리건(약80건) 본사 \n   김상윤사원 동행 처리\n   4/29~4/30  \n-지방전문점 블로이 및 신제품 \n 기술교육참여(4/3)",
-        "t05_26": "-더샵거제디클리브현장 \n   RKSP30-DG 프리픽스처짐,\n   RKSD40 목부러짐 불량 \n   대량 접수건 신속 대응독려 \n   => 마산사장 적극대응 약속\n- 온라인 가격준수 상담. 접수건에 \n  대한 신속한 대응 협조요청.\n -전문점 평가 성적 향상에 대한  높은 관심을 보이며, 밴드 활동 및  기술 교육에 적극적으로 참여함에 따라평가 순위가 지속적으로 상승함 (3월 24위 → 4월 17위)"
+        "t05_26": "-더샵거제디클리브현장 \n   RKSP30-DG 프리픽스처짐,\n   RKSD40 목부러짐 불량 \n   대량 접수건 신속 대응독려 \n   => 마산사장 적극대응 약속\n- 온라인 가격준수 상담. 접수건에 \n  대한 신속한 대응 협조요청.\n -전문점 평가 성적 향상에 대한  높은 관심을 보이며, 밴드 활동 및  기술 교육에 적극적으로 참여함에 따라평가 순위가 지속적으로 상승함 (3월 24위 → 4월 17위)",
+        "t06_26": "-두산건설 스펙현장(창원두산위브\n더센트럴) 홈바스 청구건 대행료 협의완료. 7월부터 조정된 대행료로 청구예정\n-전문점 평가 순위 지속적 상승\n (4월 17위 → 5월 11위)"
     },
     {
         "region":      "경남",
@@ -1068,7 +1100,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": ""
     },
     {
         "region":      "부산",
@@ -1100,7 +1133,8 @@
         "t02_26": "",
         "t03_26": "양산동면 더샵남양산센텀포레, 김해장유 더샵신문그리니티",
         "t04_26": "-RKSP30-DG 프리픽스 처짐불량 \n  대응중(양산동면 더샵남양산센텀\n  포레, 김해장유 더샵신문그리니티)\n -지방전문점 블로이 및 신제품 \n  기술교육참여(4/3)",
-        "t05_26": "RKSP30-DG 프리픽스 처짐불량 \n 대응중(양산동면 더샵남양산센텀\n 포레, 김해장유 더샵신문그리니티)\n*5월 84건처리"
+        "t05_26": "RKSP30-DG 프리픽스 처짐불량 \n 대응중(양산동면 더샵남양산센텀\n 포레, 김해장유 더샵신문그리니티)\n*5월 84건처리",
+        "t06_26": "블로이 비데 신속처리를 위하여 예비부품 1셋트 보유서비스 시행"
     },
     {
         "region":      "부산",
@@ -1132,7 +1166,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": "블로이 비데 신속처리를 위하여 예비부품 1셋트 보유서비스 시행"
     },
     {
         "region":      "부산",
@@ -1164,7 +1199,8 @@
         "t02_26": "",
         "t03_26": "",
         "t04_26": "지방전문점 블로이 및 신제품 기술교육참여(4/3)",
-        "t05_26": ""
+        "t05_26": "",
+        "t06_26": "-두산건설 스펙현장(부산장림사하) 홈바스 청구건 대행료 협의완료. 7월부터 조정된 대행료로 청구예정\n -블로이 비데 신속처리를 위하여 예비부품 1셋트 보유서비스 시행"
     },
     {
         "region":      "제주",
@@ -1196,7 +1232,8 @@
         "t02_26": "",
         "t03_26": "이태진 실장(사장님 친동생) 인수인계중.\n제주도에 상주하며, 4월초부터 독립적으로 AS수행예정.",
         "t04_26": "-이태진실장(사장님 동생) 주택 화재\n로 화상입어 4/22 수술 후 회복중.\n3주차 AS대응 어려우며, 4주차는 사장님이 AS.\n -RB3500 비데 자동물내림장치 고장 빈발하여 대응 어려움 토로",
-        "t05_26": "이태진실장 수술 회복되어\nAS진행 중."
+        "t05_26": "이태진실장 수술 회복되어\nAS진행 중.",
+        "t06_26": ""
     }
 ];const AREA_DATA=[
     {
@@ -17791,7 +17828,7 @@
         "product":  "RWC217,RWC601,RWL024,RWL710A(시트,레버부속,고압호스,앵글밸브,정심,앙카볼트,반다리 부속,수지 반다리)/양변기 고압호스(PVC: 흰색또는 아이보리도 나감)/삼은도기 하자기간 확인(24.4.14)",
         "center":  "956세대 "
     }
-];const EVAL_DATA=[
+];const EVAL_DATA_25=[
   {rank:1,name:"을지로로얄",cs:[60.0,60.0,60.0,46.4,49.9,49.6,49.3,40.0,49.5,50.0,49.2,49.2],co:[22.6,25.5,23.8,40.6,45.4,41.5,39.0,50.0,50.0,49.2,50.0,47.8],total:91.53,grade:"최우수"},
   {rank:1,name:"강북로얄",cs:[60.0,60.0,58.6,42.8,40.1,41.3,46.5,40.0,45.6,47.8,48.8,46.5],co:[33.0,27.0,33.0,42.0,44.0,42.0,50.0,48.0,47.0,43.0,50.0,48.0],total:90.42,grade:"우수"},
   {rank:3,name:"부산중부",cs:[60.0,60.0,60.0,45.6,48.7,34.4,49.7,50.0,47.7,49.4,50.0,48.8],co:[19.4,34.3,31.0,50.0,25.8,36.7,39.9,40.0,44.1,34.9,25.6,33.0],total:84.91,grade:""},
@@ -17828,7 +17865,46 @@
   {rank:34,name:"신제주로얄",cs:[null,null,null,null,null,24.3,28.7,25.3,35.9,40.0,40.8,38.7],co:[null,null,null,null,null,11.5,11.8,19.8,21.9,10.2,37.1,15.7],total:51.65,grade:""},
   {rank:35,name:"세종로얄",cs:[60.0,0.0,60.0,40.0,49.1,30.0,40.0,40.0,40.0,40.0,0.0,0.0],co:[15.3,0.0,15.3,10.4,15.3,10.1,10.2,10.3,10.1,10.2,0.0,0.0],total:42.19,grade:""},
   {rank:"신규",name:"인천동부",cs:[null,null,null,null,null,null,null,null,null,null,48.0,50.0],co:[null,null,null,null,null,null,null,null,null,null,28.5,31.1],total:78.78,grade:""}
-];const TM=[{k:'t05_25',l:'25년 5월'},{k:'t06_25',l:'25년 6월'},{k:'t07_25',l:'25년 7월'},{k:'t08_25',l:'25년 8월'},{k:'t09_25',l:'25년 9월'},{k:'t10_25',l:'25년 10월'},{k:'t11_25',l:'25년 11월'},{k:'t12_25',l:'25년 12월'},{k:'t01_26',l:'26년 1월'},{k:'t02_26',l:'26년 2월'},{k:'t03_26',l:'26년 3월'},{k:'t04_26',l:'26년 4월'},{k:'t05_26',l:'26년 5월'}];
+];const EVAL_DATA_26=[
+  {rank:4,name:"을지로로얄",cs:[49.91,49.78,50.0,49.7,49.93,49.66,null,null,null,null,null,null],co:[50.0,50.0,43.9,47.2,41.75,41.9,null,null,null,null,null,null],total:91.56,grade:""},
+  {rank:6,name:"강북로얄",cs:[44.04,48.6,42.17,48.7,46.54,44.32857142857143,null,null,null,null,null,null],co:[46.0,50.0,45.0,50.0,50,45,null,null,null,null,null,null],total:89.32857142857142,grade:""},
+  {rank:20,name:"부산중부",cs:[49.55,48.8,48.86,48.7,48.08,42.364285714285714,null,null,null,null,null,null],co:[37.9,33.9,26.0,27.8,22.2,31.4,null,null,null,null,null,null],total:73.7642857142857,grade:""},
+  {rank:2,name:"전북로얄",cs:[49.79,50.0,49.6,49.7,49.74,50,null,null,null,null,null,null],co:[44.0,42.75,44.0,40.0,42,45,null,null,null,null,null,null],total:95,grade:""},
+  {rank:3,name:"인천서부",cs:[48.83,48.5,49.0,48.45,42.9,49,null,null,null,null,null,null],co:[47.0,47.35,46.7,38.35,50,43.45,null,null,null,null,null,null],total:92.45,grade:""},
+  {rank:5,name:"서울동부",cs:[49.2,49.8,49.5,48.54,49.43,49.95,null,null,null,null,null,null],co:[42.65,30.3,34.65,34.85,34.3,40.95,null,null,null,null,null,null],total:90.9,grade:""},
+  {rank:16,name:"신청주로얄",cs:[47.65,48.36,45.67,44.76,45.84,38.529411764705884,null,null,null,null,null,null],co:[32.65,36.2,50.0,42.4,38.1,41.15,null,null,null,null,null,null],total:79.67941176470589,grade:""},
+  {rank:7,name:"순천로얄",cs:[50.0,49.95,43.0,49.85,43,50,null,null,null,null,null,null],co:[36.05,37.85,36.8,39.35,37.4,37.45,null,null,null,null,null,null],total:87.45,grade:""},
+  {rank:17,name:"남부로얄",cs:[49.31,44.1,49.62,49.35,49.16,49.42,null,null,null,null,null,null],co:[21.2,27.8,28.8,28.5,35.3,30.25,null,null,null,null,null,null],total:79.67,grade:""},
+  {rank:24,name:"태경로얄",cs:[40.0,47.94,45.8,45.52,47.3,44.66,null,null,null,null,null,null],co:[12.9,34.15,31.4,35.5,16,26.4,null,null,null,null,null,null],total:71.06,grade:""},
+  {rank:11,name:"강서로얄",cs:[48.08,50.0,49.28,50.0,50,43,null,null,null,null,null,null],co:[34.5,22.85,36.4,31.0,46,41,null,null,null,null,null,null],total:84,grade:""},
+  {rank:22,name:"용인로얄",cs:[39.23,33.05,41.2,39.48,39.98,40.54,null,null,null,null,null,null],co:[49.0,50.0,44.0,49.0,42,31,null,null,null,null,null,null],total:71.53999999999999,grade:""},
+  {rank:31,name:"울산로얄",cs:[43.93,43.59,44.0,48.83,49.89,42.926923076923075,null,null,null,null,null,null],co:[30.0,31.15,20.4,25.05,14.8,15.7,null,null,null,null,null,null],total:58.62692307692308,grade:""},
+  {rank:null,name:"경기동부",cs:[null,null,null,null,null,null,null,null,null,null,null,null],co:[null,null,null,null,null,null,null,null,null,null,null,null],total:null,grade:""},
+  {rank:null,name:"부천로얄",cs:[null,null,null,null,null,null,null,null,null,null,null,null],co:[null,null,null,null,null,null,null,null,null,null,null,null],total:null,grade:""},
+  {rank:15,name:"북대구로얄",cs:[48.1,48.6,46.8,42.8,49.7,49.4,null,null,null,null,null,null],co:[25.3,27.2,32.65,28.05,24.7,31.15,null,null,null,null,null,null],total:80.55,grade:""},
+  {rank:29,name:"구미로얄",cs:[49.07,45.4,44.92,44.72,46.72,38.83333333333333,null,null,null,null,null,null],co:[28.0,28.35,19.25,38.0,17.05,25.35,null,null,null,null,null,null],total:64.18333333333334,grade:""},
+  {rank:23,name:"강남로얄",cs:[49.89,49.4,49.96,48.14,49.65,48.16,null,null,null,null,null,null],co:[32.5,32.8,17.3,27.4,14.8,23.1,null,null,null,null,null,null],total:71.25999999999999,grade:""},
+  {rank:9,name:"부산남부",cs:[50.0,50.0,43.0,48.8,49.62,50,null,null,null,null,null,null],co:[14.5,22.7,15.3,24.8,13.4,36,null,null,null,null,null,null],total:86,grade:""},
+  {rank:12,name:"대구명품",cs:[50.0,49.06,49.2,50.0,50,48.989999999999995,null,null,null,null,null,null],co:[20.65,21.35,39.6,40.2,30.55,32.1,null,null,null,null,null,null],total:81.09,grade:""},
+  {rank:21,name:"대전로얄",cs:[48.92,50.0,44.67,50.0,48.02,46.97272727272727,null,null,null,null,null,null],co:[27.6,34.85,39.85,15.95,23.4,26.45,null,null,null,null,null,null],total:73.42272727272727,grade:""},
+  {rank:8,name:"진주로얄",cs:[49.62,50.0,50.0,50.0,49.25,50,null,null,null,null,null,null],co:[22.95,25.95,30.0,41.7,25.45,37.2,null,null,null,null,null,null],total:87.2,grade:""},
+  {rank:18,name:"광주로얄",cs:[41.65,43.99,44.19,46.7,49.69,48.6,null,null,null,null,null,null],co:[24.1,38.8,37.3,30.2,20.95,29.55,null,null,null,null,null,null],total:78.15,grade:""},
+  {rank:13,name:"화성로얄",cs:[50.0,49.4,50.0,43.0,48.99,49.879999999999995,null,null,null,null,null,null],co:[32.25,21.55,22.55,37.75,32.5,30.85,null,null,null,null,null,null],total:80.72999999999999,grade:""},
+  {rank:10,name:"신강동로얄",cs:[42.06,50.0,49.85,42.8,43.94,49.36,null,null,null,null,null,null],co:[34.0,33.2,36.1,33.4,37,35.3,null,null,null,null,null,null],total:84.66,grade:""},
+  {rank:32,name:"서대구로얄",cs:[48.04,48.29,50.0,50.0,43,43,null,null,null,null,null,null],co:[24.2,17.2,24.8,25.7,12.4,15.5,null,null,null,null,null,null],total:58.5,grade:""},
+  {rank:19,name:"서울서부",cs:[40.0,45.0,43.0,50.0,43,50,null,null,null,null,null,null],co:[14.7,18.4,24.2,31.6,19.5,25.5,null,null,null,null,null,null],total:75.5,grade:""},
+  {rank:26,name:"서울강서",cs:[48.0,49.93,50.0,43.0,43,43,null,null,null,null,null,null],co:[13.5,13.7,23.9,10.4,18.9,24,null,null,null,null,null,null],total:67,grade:""},
+  {rank:33,name:"포항로얄",cs:[46.7,43.24,45.0,40.92,33,41.9,null,null,null,null,null,null],co:[14.85,19.35,18.3,32.7,19.5,15.5,null,null,null,null,null,null],total:57.4,grade:""},
+  {rank:14,name:"마산로얄",cs:[30.9,38.79,33.68,30.03,39.4,35.09263157894737,null,null,null,null,null,null],co:[32.3,44.1,34.65,50.0,43,45.5,null,null,null,null,null,null],total:80.59263157894736,grade:""},
+  {rank:34,name:"신강릉로얄",cs:[42.83,49.55,48.99,48.05,49.48,35,null,null,null,null,null,null],co:[28.75,39.15,13.9,19.4,33.25,13.6,null,null,null,null,null,null],total:48.6,grade:""},
+  {rank:27,name:"서울중부",cs:[40.0,40.0,41.6,43.05,39.7,43,null,null,null,null,null,null],co:[10.4,21.4,27.7,29.6,20.3,23.9,null,null,null,null,null,null],total:66.9,grade:""},
+  {rank:28,name:"천안아산",cs:[42.47,45.0,37.26,35.71,39.45,42.94714285714286,null,null,null,null,null,null],co:[23.5,18.0,17.4,17.3,22.4,22.5,null,null,null,null,null,null],total:65.44714285714286,grade:""},
+  {rank:25,name:"신제주로얄",cs:[40.0,48.23,39.92,43.0,38.03,33,null,null,null,null,null,null],co:[13.2,25.2,16.4,10.85,34.55,34.55,null,null,null,null,null,null],total:67.55,grade:""},
+  {rank:30,name:"세종로얄",cs:[40.0,45.0,43.0,35.0,43,43,null,null,null,null,null,null],co:[10.6,23.5,10.1,19.2,10.4,16.2,null,null,null,null,null,null],total:59.2,grade:""},
+  {rank:1,name:"인천동부",cs:[49.92,49.37,49.5,50.0,49.25,49.07176470588236,null,null,null,null,null,null],co:[37.75,50.0,50.0,48.8,50,48,null,null,null,null,null,null],total:97.07176470588236,grade:""},
+];
+let EVAL_DATA=EVAL_DATA_25;
+const TM=[{k:'t05_25',l:'25년 5월'},{k:'t06_25',l:'25년 6월'},{k:'t07_25',l:'25년 7월'},{k:'t08_25',l:'25년 8월'},{k:'t09_25',l:'25년 9월'},{k:'t10_25',l:'25년 10월'},{k:'t11_25',l:'25년 11월'},{k:'t12_25',l:'25년 12월'},{k:'t01_26',l:'26년 1월'},{k:'t02_26',l:'26년 2월'},{k:'t03_26',l:'26년 3월'},{k:'t04_26',l:'26년 4월'},{k:'t05_26',l:'26년 5월'},{k:'t06_26',l:'26년 6월'}];
 const RL={'서울경기':'서울/경기','인천':'인천','강원':'강원','충남':'충남','충북':'충북','호남':'호남','대구':'대구','경북':'경북','경남':'경남','부산':'부산','제주':'제주'};
 const SALES_MAP={'101090':'3팀S/박윤호','101037':'1팀S/주동호','111035':'부산/윤경수','107039':'광주/정광석','110007':'대구/박주창','101033':'1팀S/정성민','109131':'대구/박주창','105010':'대전/유홍연','112007':'부산/박주창','111017':'부산/한상원','111032':'부산/박주창','111079':'대구/박주창','109011':'대구/박주창','101119':'1팀S/정성민','101059':'1팀S/주동호','101036':'1팀S/정성민','101054':'1팀S/정성민','105017':'대전/유홍연','107009':'광주/정광석','109136':'3팀S/염종민','101146':'3팀S/염종민','109135':'부산/윤경수','105016':'대전/유홍연','103011':'1팀S/허태식','112010':'부산/윤경수','101030':'1팀S/주동호','109140':'3팀S/박윤호','111078':'3팀S/박윤호','107037':'광주/정광석','111034':'부산/박주창','107046':'대전/유홍연','101130':'2팀S/최기남','110006':'대구/박주창','101132':'1팀S/정성민'};
 let curR='all',curS=null;
@@ -17933,7 +18009,25 @@ function filterStores(){
   }catch(err){console.error('filterStores error:',err);}
 }
 let curTM=null,calYear=2026;
-let evalPeriod='year',evalMonth=1,sEvalPeriod='year',sEvalMonth=1;
+function _latestAvailMonth(data){
+  let m=0;
+  data.forEach(function(d){
+    for(let i=11;i>=0;i--){
+      if(d.cs[i]!=null||d.co[i]!=null){ if(i+1>m)m=i+1; break; }
+    }
+  });
+  return m||1;
+}
+let evalPeriod='year',evalMonth=_latestAvailMonth(EVAL_DATA_25),sEvalPeriod='year',sEvalMonth=_latestAvailMonth(EVAL_DATA_25),evalYear=2025;
+function switchEvalYear(y){
+  evalYear=y;
+  EVAL_DATA=(y===2026)?EVAL_DATA_26:EVAL_DATA_25;
+  const _lm=_latestAvailMonth(EVAL_DATA);
+  evalPeriod='year';evalMonth=_lm;sEvalPeriod='year';sEvalMonth=_lm;
+  document.querySelectorAll('.eval-year-btn').forEach(function(b){b.classList.toggle('active',parseInt(b.dataset.year)===y);});
+  renderEvalAll();
+  if(typeof curS!=='undefined'&&curS)rbEval(curS);
+}
 function renderTrendAll(){
   const src=curR==='all'?STORE_DATA:STORE_DATA.filter(s=>s.region===curR);
   if(!curTM){const latest=[...TM].reverse().find(m=>src.some(s=>s[m.k]&&s[m.k].trim()));if(latest){curTM=latest;calYear=2000+parseInt(latest.k.slice(-2));}}
@@ -17974,7 +18068,7 @@ function renderTrendAll(){
     return;
   }
   const entries=src.filter(s=>s[curTM.k]&&s[curTM.k].trim());
-  result.innerHTML='<div class="tal-result-hdr"><span class="tal-result-month">'+e(curTM.l)+'</span><span class="tal-result-cnt">'+entries.length+'개 전문점</span></div><div class="tal-entries"></div>';
+  result.innerHTML='<div class="tal-result-hdr"><span class="tal-result-month">'+e(curTM.l)+'</span><span class="tal-result-cnt">'+entries.length+'개 전문점</span><button onclick="downloadTrendExcel()" style="margin-left:auto;background:#1a3a6b;color:#fff;border:none;border-radius:6px;padding:5px 13px;font-size:12px;font-weight:600;cursor:pointer;">📥 엑셀 다운로드</button></div><div class="tal-entries"></div>';
   const list=result.querySelector('.tal-entries');
   entries.forEach(s=>{
     const row=document.createElement('div');row.className='tm-entry';
@@ -17983,39 +18077,43 @@ function renderTrendAll(){
     list.appendChild(row);
   });
 }
+function downloadTrendExcel(){if(!curTM){alert('월을 먼저 선택해주세요.');return;}const src=curR==='all'?STORE_DATA:STORE_DATA.filter(s=>s.region===curR);const entries=src.filter(s=>s[curTM.k]&&s[curTM.k].trim());if(!entries.length){alert('다운로드할 내용이 없습니다.');return;}let html='<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="UTF-8"></head><body><table border="1"><tr><th>지역</th><th>전문점</th><th>동향내용('+e(curTM.l)+')</th></tr>';entries.forEach(s=>{const txt=e(s[curTM.k].trim()).replace(/\n/g,'<br>');html+='<tr><td>'+e(RL[s.region]||s.region||'')+'</td><td>'+e(s.name)+'</td><td>'+txt+'</td></tr>';});html+='</table></body></html>';const blob=new Blob(['﻿'+html],{type:'application/vnd.ms-excel;charset=utf-8;'});const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download='전문점동향요약본_'+curTM.l.replace(/\s/g,'')+'.xls';document.body.appendChild(link);link.click();document.body.removeChild(link);URL.revokeObjectURL(link.href);}
 function evalPeriodSummaryHTML(list,idxs,singleStore){if(!idxs||idxs.length<=1)return "";var csvAll=[],covAll=[],totAll=[];if(singleStore){var d=list[0];idxs.forEach(function(i){var cs=d.cs[i],co=d.co[i];if(cs!==null&&!isNaN(cs))csvAll.push(cs);if(co!==null&&!isNaN(co))covAll.push(co);if(cs!==null&&co!==null&&!isNaN(cs)&&!isNaN(co))totAll.push(cs+co);});}else{list.forEach(function(d){idxs.forEach(function(i){var cs=d.cs[i],co=d.co[i];if(cs!==null&&!isNaN(cs))csvAll.push(cs);if(co!==null&&!isNaN(co))covAll.push(co);if(cs!==null&&co!==null&&!isNaN(cs)&&!isNaN(co))totAll.push(cs+co);});});}function avg(arr){return arr.length?Math.round(arr.reduce(function(a,b){return a+b;},0)/arr.length*10)/10:null;}var csA=avg(csvAll),coA=avg(covAll),totA=avg(totAll);function tc(v){return v>=80?"g":v>=65?"y":"r";}var h='<div class="eval-period-summary">';h+='<div class="eps-item"><div class="eps-label">기간 평균 합계</div><div class="eps-val '+(totA!==null?tc(totA):"")+'">'+(totA!==null?totA:"—")+"</div></div>";h+='<div class="eps-item"><div class="eps-label">고객만족도 평균</div><div class="eps-val" style="color:#3b82f6">'+(csA!==null?csA:"—")+"</div></div>";h+='<div class="eps-item"><div class="eps-label">협조도 평균</div><div class="eps-val" style="color:#10b981">'+(coA!==null?coA:"—")+"</div></div>";h+="</div>";return h;}
 function evalMIdxs(p,m){if(p==='h1')return[0,1,2,3,4,5];if(p==='h2')return[6,7,8,9,10,11];if(p==='q1')return[0,1,2];if(p==='q2')return[3,4,5];if(p==='q3')return[6,7,8];if(p==='q4')return[9,10,11];if(p==='month')return[m-1];return[0,1,2,3,4,5,6,7,8,9,10,11];}
 function evAvg(arr,idxs){const v=idxs.map(i=>arr[i]).filter(x=>x!==null&&x!==undefined&&!isNaN(x));return v.length?Math.round(v.reduce((a,b)=>a+b,0)/v.length*10)/10:null;}
-function evalPeriodBarHTML(pState,mState){const ps=[{k:'year',l:'연간'},{k:'h1',l:'상반기'},{k:'h2',l:'하반기'},{k:'q1',l:'1분기'},{k:'q2',l:'2분기'},{k:'q3',l:'3분기'},{k:'q4',l:'4분기'},{k:'month',l:'월별'}];let h='<div class="eval-period-bar">';ps.forEach((p,i)=>{if(i===3||i===7)h+='<span class="eval-period-sep"></span>';h+='<button class="eval-period-btn'+(pState===p.k?' active':'')+'" data-period="'+p.k+'">'+p.l+'</button>';});if(pState==='month'){h+='<div class="eval-month-pills">';['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'].forEach((mn,i)=>{h+='<button class="eval-month-pill'+(mState===i+1?' active':'')+'" data-month="'+(i+1)+'">'+mn+'</button>';});h+='</div>';}h+='</div>';return h;}
-function evalChartSVG(list,highlightIdxs,singleStore){if(!list.length)return'';const W=720,H=170,padL=38,padR=16,padT=18,padB=28,chartW=W-padL-padR,chartH=H-padT-padB;const allMn=['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'];let csLine=[],coLine=[],totLine=[];for(let i=0;i<12;i++){if(singleStore){const d=list[0];const cs=d.cs[i],co=d.co[i];csLine.push(cs);coLine.push(co);totLine.push((cs!==null&&co!==null&&!isNaN(cs)&&!isNaN(co))?Math.round((cs+co)*10)/10:null);}else{const csv=list.map(d=>d.cs[i]).filter(x=>x!==null&&!isNaN(x));const cov=list.map(d=>d.co[i]).filter(x=>x!==null&&!isNaN(x));const cs=csv.length?Math.round(csv.reduce((a,b)=>a+b,0)/csv.length*10)/10:null;const co=cov.length?Math.round(cov.reduce((a,b)=>a+b,0)/cov.length*10)/10:null;csLine.push(cs);coLine.push(co);totLine.push((cs!==null&&co!==null)?Math.round((cs+co)*10)/10:null);}}function xPos(j){return padL+j*chartW/11;}function yPos(v){return v===null?null:padT+chartH*(1-v/100);}function pathLine(vals,color,sw){const segs=[];let seg=[];vals.forEach((v,j)=>{if(v===null||isNaN(v)){if(seg.length){segs.push(seg);seg=[];}return;}seg.push([xPos(j),yPos(v)]);});if(seg.length)segs.push(seg);return segs.map(s=>{if(s.length<2)return'<circle cx="'+s[0][0].toFixed(1)+'" cy="'+s[0][1].toFixed(1)+'" r="3.5" fill="'+color+'" stroke="#fff" stroke-width="1.5"/>';return'<path d="M'+s.map(p=>p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' L')+'" fill="none" stroke="'+color+'" stroke-width="'+sw+'" stroke-linejoin="round" stroke-linecap="round"/>';}).join('');}function dotsF(vals,color){return vals.map((v,j)=>{if(v===null||isNaN(v))return'';return'<circle cx="'+xPos(j).toFixed(1)+'" cy="'+yPos(v).toFixed(1)+'" r="3.5" fill="'+color+'" stroke="#fff" stroke-width="1.5"/>';}).join('');}function labelsF(vals,color){return vals.map((v,j)=>{if(v===null||isNaN(v))return'';const x=xPos(j),y=yPos(v);return'<text x="'+x.toFixed(1)+'" y="'+Math.max(padT+9,y-6).toFixed(1)+'" text-anchor="middle" font-size="9" fill="'+color+'" font-weight="700">'+v+'</text>';}).join('');}const hSet=new Set(highlightIdxs);let svg='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:'+H+'px">';if(highlightIdxs.length<12&&highlightIdxs.length>0){let st=-1;for(let i=0;i<=12;i++){if(i<12&&hSet.has(i)){if(st===-1)st=i;}else if(st!==-1){const x1=Math.max(padL,xPos(st)-7),x2=Math.min(W-padR,xPos(i-1)+7);svg+='<rect x="'+x1.toFixed(1)+'" y="'+padT+'" width="'+(x2-x1).toFixed(1)+'" height="'+chartH+'" fill="#e8f0ff" rx="4"/>';st=-1;}}}[0,20,40,60,80,100].forEach(v=>{const y=yPos(v).toFixed(1);svg+='<line x1="'+padL+'" y1="'+y+'" x2="'+(W-padR)+'" y2="'+y+'" stroke="#e8ecf0" stroke-width="1"/>';svg+='<text x="'+(padL-4)+'" y="'+(parseFloat(y)+3).toFixed(1)+'" text-anchor="end" font-size="9" fill="#adb5bd">'+v+'</text>';});allMn.forEach((mn,j)=>{const x=xPos(j);const fc=hSet.has(j)?'#1a3a6b':'#adb5bd';const fw=hSet.has(j)?'700':'400';svg+='<text x="'+x.toFixed(1)+'" y="'+(padT+chartH+14).toFixed(1)+'" text-anchor="middle" font-size="10" fill="'+fc+'" font-weight="'+fw+'">'+mn+'</text>';});svg+=pathLine(totLine,'#1a3a6b',2.5)+pathLine(csLine,'#3b82f6',1.8)+pathLine(coLine,'#10b981',1.8);svg+=dotsF(totLine,'#1a3a6b')+dotsF(csLine,'#3b82f6')+dotsF(coLine,'#10b981');svg+=labelsF(totLine.map((v,i)=>hSet.has(i)?v:null),'#1a3a6b');if(highlightIdxs.length<=3){svg+=labelsF(csLine.map((v,i)=>hSet.has(i)?v:null),'#3b82f6')+labelsF(coLine.map((v,i)=>hSet.has(i)?v:null),'#10b981');}svg+='</svg>';return svg;}
+function evAvgRaw(arr,idxs){const v=idxs.map(i=>arr[i]).filter(x=>x!==null&&x!==undefined&&!isNaN(x));return v.length?v.reduce((a,b)=>a+b,0)/v.length:null;}
+function evalPeriodBarHTML(pState,mState){const ps=[{k:'year',l:'연간'},{k:'h1',l:'상반기'},{k:'h2',l:'하반기'},{k:'q1',l:'1분기'},{k:'q2',l:'2분기'},{k:'q3',l:'3분기'},{k:'q4',l:'4분기'}];let h='<div class="eval-period-bar">';ps.forEach((p,i)=>{if(i===3)h+='<span class="eval-period-sep"></span>';h+='<button class="eval-period-btn'+(pState===p.k?' active':'')+'" data-period="'+p.k+'">'+p.l+'</button>';});h+='<span class="eval-period-sep"></span><div class="eval-month-pills">';['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'].forEach((mn,i)=>{h+='<button class="eval-month-pill'+(pState==='month'&&mState===i+1?' active':'')+'" data-month="'+(i+1)+'">'+mn+'</button>';});h+='</div></div>';return h;}
+function evalChartSVG(list,highlightIdxs,singleStore){if(!list.length)return'';const W=720,H=170,padL=38,padR=16,padT=18,padB=28,chartW=W-padL-padR,chartH=H-padT-padB;const allMn=['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'];let csLine=[],coLine=[],totLine=[];for(let i=0;i<12;i++){if(singleStore){const d=list[0];const cs=d.cs[i],co=d.co[i];csLine.push(cs);coLine.push(co);totLine.push((cs!==null&&co!==null&&!isNaN(cs)&&!isNaN(co))?Math.round((cs+co)*10)/10:null);}else{const csv=list.map(d=>d.cs[i]).filter(x=>x!==null&&!isNaN(x));const cov=list.map(d=>d.co[i]).filter(x=>x!==null&&!isNaN(x));const cs=csv.length?Math.round(csv.reduce((a,b)=>a+b,0)/csv.length*10)/10:null;const co=cov.length?Math.round(cov.reduce((a,b)=>a+b,0)/cov.length*10)/10:null;csLine.push(cs);coLine.push(co);totLine.push((cs!==null&&co!==null)?Math.round((cs+co)*10)/10:null);}}function xPos(j){return padL+j*chartW/11;}function yPos(v){return v===null?null:padT+chartH*(1-v/100);}function pathLine(vals,color,sw){const segs=[];let seg=[];vals.forEach((v,j)=>{if(v===null||isNaN(v)){if(seg.length){segs.push(seg);seg=[];}return;}seg.push([xPos(j),yPos(v)]);});if(seg.length)segs.push(seg);return segs.map(s=>{if(s.length<2)return'<circle cx="'+s[0][0].toFixed(1)+'" cy="'+s[0][1].toFixed(1)+'" r="3.5" fill="'+color+'" stroke="#fff" stroke-width="1.5"/>';return'<path d="M'+s.map(p=>p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' L')+'" fill="none" stroke="'+color+'" stroke-width="'+sw+'" stroke-linejoin="round" stroke-linecap="round"/>';}).join('');}function dotsF(vals,color){return vals.map((v,j)=>{if(v===null||isNaN(v))return'';return'<circle cx="'+xPos(j).toFixed(1)+'" cy="'+yPos(v).toFixed(1)+'" r="3.5" fill="'+color+'" stroke="#fff" stroke-width="1.5"/>';}).join('');}function labelsF(vals,color){return vals.map((v,j)=>{if(v===null||isNaN(v))return'';const x=xPos(j),y=yPos(v);return'<text x="'+x.toFixed(1)+'" y="'+Math.max(padT+9,y-6).toFixed(1)+'" text-anchor="middle" font-size="9" fill="'+color+'" font-weight="700">'+v+'</text>';}).join('');}const hSet=new Set(highlightIdxs);let svg='<svg viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:'+H+'px">';if(highlightIdxs.length<12&&highlightIdxs.length>0){let st=-1;for(let i=0;i<=12;i++){if(i<12&&hSet.has(i)){if(st===-1)st=i;}else if(st!==-1){const x1=Math.max(padL,xPos(st)-7),x2=Math.min(W-padR,xPos(i-1)+7);svg+='<rect x="'+x1.toFixed(1)+'" y="'+padT+'" width="'+(x2-x1).toFixed(1)+'" height="'+chartH+'" fill="#e8f0ff" rx="4"/>';st=-1;}}}[0,20,40,60,80,100].forEach(v=>{const y=yPos(v).toFixed(1);svg+='<line x1="'+padL+'" y1="'+y+'" x2="'+(W-padR)+'" y2="'+y+'" stroke="#e8ecf0" stroke-width="1"/>';svg+='<text x="'+(padL-4)+'" y="'+(parseFloat(y)+3).toFixed(1)+'" text-anchor="end" font-size="9" fill="#adb5bd">'+v+'</text>';});allMn.forEach((mn,j)=>{const x=xPos(j);const fc=hSet.has(j)?'#1a3a6b':'#adb5bd';const fw=hSet.has(j)?'700':'400';svg+='<text x="'+x.toFixed(1)+'" y="'+(padT+chartH+14).toFixed(1)+'" text-anchor="middle" font-size="10" fill="'+fc+'" font-weight="'+fw+'">'+mn+'</text>';});svg+=pathLine(totLine,'#1a3a6b',2.5)+pathLine(csLine,'#3b82f6',1.8)+pathLine(coLine,'#10b981',1.8);svg+=dotsF(totLine,'#1a3a6b')+dotsF(csLine,'#3b82f6')+dotsF(coLine,'#10b981');svg+=labelsF(totLine,'#1a3a6b');if(highlightIdxs.length<=3){svg+=labelsF(csLine.map((v,i)=>hSet.has(i)?v:null),'#3b82f6')+labelsF(coLine.map((v,i)=>hSet.has(i)?v:null),'#10b981');}svg+='</svg>';return svg;}
 function renderEvalAll(){
   const src=curR==='all'?STORE_DATA:STORE_DATA.filter(s=>s.region===curR);
   const srcNames=new Set(src.map(s=>s.name.trim()));
   const list=curR==='all'?EVAL_DATA:EVAL_DATA.filter(d=>srcNames.has(d.name.trim()));
   const idxs=evalMIdxs(evalPeriod,evalMonth);
   const periodLabel={year:'연간',h1:'상반기(1~6월)',h2:'하반기(7~12월)',q1:'1분기(1~3월)',q2:'2분기(4~6월)',q3:'3분기(7~9월)',q4:'4분기(10~12월)',month:evalMonth+'월'}[evalPeriod];
-  document.getElementById('evalSub').textContent=(curR==='all'?'전체':(RL[curR]||curR))+' · '+list.length+'개 전문점 · 2025 '+periodLabel;
+  document.getElementById('evalSub').textContent=(curR==='all'?'전체':(RL[curR]||curR))+' · '+list.length+'개 전문점 · '+evalYear+' '+periodLabel+(evalYear===2026?' (1~5월 기준)':'');
   function gradeBadge(d){if(d.grade==='최우수')return'<span class="eval-grade-badge eg-best">최우수</span>';if(d.grade==='우수')return'<span class="eval-grade-badge eg-good">우수</span>';if(d.rank==='신규')return'<span class="eval-grade-badge eg-new">신규</span>';return'';}
   function sbar(v,max,color){if(v===null||v===undefined)return'<span class="emv-null">-</span>';const pct=Math.min(100,Math.round((v/max)*100));return'<div class="eval-sbar"><span class="eval-sbar-val">'+v+'</span><div class="eval-sbar-track"><div style="width:'+pct+'%;height:100%;background:'+color+';border-radius:3px"></div></div></div>';}
   let h=evalPeriodBarHTML(evalPeriod,evalMonth);
+  if(evalYear===2026)h+='<div style="font-size:11px;color:var(--txtl);margin-bottom:8px;padding:4px 8px;background:#fff8e1;border-radius:5px;border-left:3px solid var(--acc);">⚠️ 2026년은 1~6월 데이터만 반영됩니다. 7~12월은 데이터가 없습니다.</div>';
   h+='<div class="eval-chart-wrap">'+evalPeriodSummaryHTML(list,idxs,false)+'<div class="eval-chart-legend">';
   h+='<span class="eval-chart-legend-item"><span class="eval-chart-legend-line" style="background:#1a3a6b"></span>전체 평균 합계</span>';
   h+='<span class="eval-chart-legend-item"><span class="eval-chart-legend-line" style="background:#3b82f6"></span>고객만족도 평균</span>';
   h+='<span class="eval-chart-legend-item"><span class="eval-chart-legend-line" style="background:#10b981"></span>협조도 평균</span>';
   h+='</div>'+evalChartSVG(list,idxs,false)+'</div>';
-  const sorted=[...list].sort((a,b)=>{const ta=(evAvg(a.cs,idxs)||0)+(evAvg(a.co,idxs)||0);const tb=(evAvg(b.cs,idxs)||0)+(evAvg(b.co,idxs)||0);return tb-ta;});
-  h+='<table class="eval-table"><thead><tr><th style="width:44px;text-align:center">연간순위</th><th style="text-align:left">전문점</th><th style="width:64px;text-align:center">등급</th><th style="min-width:110px">고객만족도 평균</th><th style="min-width:110px">협조도 평균</th><th style="width:64px;text-align:center">기간합계</th></tr></thead><tbody>';
-  sorted.forEach((d,i)=>{const csAvg=evAvg(d.cs,idxs),coAvg=evAvg(d.co,idxs);const totAvg=(csAvg!==null&&coAvg!==null)?Math.round((csAvg+coAvg)*10)/10:null;const tc=totAvg!==null?(totAvg>=80?'var(--ok)':totAvg>=65?'#d97706':'var(--err)'):'var(--txtl)';h+='<tr data-si="'+i+'"><td class="eval-rank-num">'+(evalPeriod==='year'?(d.rank||'-'):i+1)+'</td><td style="font-weight:700">'+e(d.name)+'</td><td style="text-align:center">'+gradeBadge(d)+'</td><td>'+(csAvg!==null?sbar(csAvg,60,'#3b82f6'):'-')+'</td><td>'+(coAvg!==null?sbar(coAvg,50,'#10b981'):'-')+'</td><td style="text-align:center;font-weight:800;color:'+tc+'">'+(totAvg!==null?totAvg:'-')+'</td></tr>';});
+  const sorted=[...list].sort((a,b)=>{const ta=(evAvgRaw(a.cs,idxs)||0)+(evAvgRaw(a.co,idxs)||0);const tb=(evAvgRaw(b.cs,idxs)||0)+(evAvgRaw(b.co,idxs)||0);return tb-ta;});
+  h+='<table class="eval-table"><thead><tr><th style="width:44px;text-align:center">'+(evalYear===2026?'5월순위':'연간순위')+'</th><th style="text-align:left">전문점</th><th style="width:64px;text-align:center">등급</th><th style="min-width:110px">고객만족도 평균</th><th style="min-width:110px">협조도 평균</th><th style="width:64px;text-align:center">기간합계</th></tr></thead><tbody>';
+  sorted.forEach((d,i)=>{const csAvg=evAvg(d.cs,idxs),coAvg=evAvg(d.co,idxs);const csRaw=evAvgRaw(d.cs,idxs),coRaw=evAvgRaw(d.co,idxs);const totAvg=(csRaw!==null&&coRaw!==null)?Math.round((csRaw+coRaw)*10)/10:null;const tc=totAvg!==null?(totAvg>=80?'var(--ok)':totAvg>=65?'#d97706':'var(--err)'):'var(--txtl)';h+='<tr data-si="'+i+'"><td class="eval-rank-num">'+(evalPeriod==='year'?(d.rank||'-'):i+1)+'</td><td style="font-weight:700">'+e(d.name)+'</td><td style="text-align:center">'+gradeBadge(d)+'</td><td>'+(csAvg!==null?sbar(csAvg,60,'#3b82f6'):'-')+'</td><td>'+(coAvg!==null?sbar(coAvg,50,'#10b981'):'-')+'</td><td style="text-align:center;font-weight:800;color:'+tc+'">'+(totAvg!==null?totAvg:'-')+'</td></tr>';});
   h+='</tbody></table>';
   const grid=document.getElementById('evalGrid');grid.innerHTML=h;
   grid.querySelectorAll('.eval-period-btn').forEach(btn=>{btn.addEventListener('click',()=>{evalPeriod=btn.dataset.period;renderEvalAll();});});
-  grid.querySelectorAll('.eval-month-pill').forEach(btn=>{btn.addEventListener('click',()=>{evalMonth=parseInt(btn.dataset.month);renderEvalAll();});});
+  grid.querySelectorAll('.eval-month-pill').forEach(btn=>{btn.addEventListener('click',()=>{evalPeriod='month';evalMonth=parseInt(btn.dataset.month);renderEvalAll();});});
   grid.querySelectorAll('tbody tr').forEach((row,i)=>{const d=sorted[i];const store=STORE_DATA.find(s=>s.name.trim()===d.name.trim());if(store)row.addEventListener('click',()=>{selStore(store);switchPage('store');});});
 }
 function rbEval(s){
   const dp=document.getElementById('dp-eval');
   const ev=EVAL_DATA.find(d=>d.name.trim()===s.name.trim());
-  if(!ev){dp.innerHTML='<div style="padding:24px;text-align:center;color:var(--txtl);font-size:13px">평가 데이터가 없습니다.</div>';return;}
+  const yearTabsHTML='<div class="eval-period-bar" style="margin-bottom:10px"><button class="eval-period-btn eval-year-btn'+(evalYear===2025?' active':'')+'" data-year="2025" onclick="switchEvalYear(2025)">2025년</button><button class="eval-period-btn eval-year-btn'+(evalYear===2026?' active':'')+'" data-year="2026" onclick="switchEvalYear(2026)">2026년 (1~6월)</button></div>';
+  if(!ev||ev.total==null){dp.innerHTML=yearTabsHTML+'<div style="padding:24px;text-align:center;color:var(--txtl);font-size:13px">'+evalYear+'년 평가 데이터가 없습니다.</div>';return;}
   const idxs=evalMIdxs(sEvalPeriod,sEvalMonth);
   const months=['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'];
   function cls_cs(v){return v===null||isNaN(v)?'emv-null':v>=45?'emv-g':v>=35?'emv-y':'emv-r';}
@@ -18024,15 +18122,19 @@ function rbEval(s){
   function fmt(v){return v===null||v===undefined?'-':v===0?'0':v.toFixed(1);}
   const grCls=ev.grade==='최우수'?'eg-best':ev.grade==='우수'?'eg-good':ev.rank==='신규'?'eg-new':'';
   const csAvg=evAvg(ev.cs,idxs),coAvg=evAvg(ev.co,idxs);
-  const totAvg=(csAvg!==null&&coAvg!==null)?Math.round((csAvg+coAvg)*10)/10:null;
-  let h='<div class="card"><div class="cardtitle"><div class="cbar"></div>2025년 전문점 평가 현황</div>';
+  const csRawE=evAvgRaw(ev.cs,idxs),coRawE=evAvgRaw(ev.co,idxs);
+  const totAvg=(csRawE!==null&&coRawE!==null)?Math.round((csRawE+coRawE)*10)/10:null;
+  const rankLbl=evalYear===2026?'5월 순위':'연간 순위',totLbl=evalYear===2026?'5월 총점':'연간 총점';
+  let h='<div class="card"><div class="cardtitle"><div class="cbar"></div>'+evalYear+'년 전문점 평가 현황</div>';
+  h+=yearTabsHTML;
   h+='<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px;">';
-  if(ev.rank&&ev.rank!=='신규')h+='<div style="text-align:center;padding:8px 16px;background:var(--bg);border-radius:8px;"><div style="font-size:10px;color:var(--txtl);margin-bottom:1px">연간 순위</div><div style="font-size:20px;font-weight:800;color:var(--pri)">'+ev.rank+'위</div></div>';
-  h+='<div style="text-align:center;padding:8px 16px;background:var(--bg);border-radius:8px;"><div style="font-size:10px;color:var(--txtl);margin-bottom:1px">연간 총점</div><div style="font-size:20px;font-weight:800;color:var(--pri)">'+ev.total+'</div></div>';
+  if(ev.rank&&ev.rank!=='신규')h+='<div style="text-align:center;padding:8px 16px;background:var(--bg);border-radius:8px;"><div style="font-size:10px;color:var(--txtl);margin-bottom:1px">'+rankLbl+'</div><div style="font-size:20px;font-weight:800;color:var(--pri)">'+ev.rank+'위</div></div>';
+  h+='<div style="text-align:center;padding:8px 16px;background:var(--bg);border-radius:8px;"><div style="font-size:10px;color:var(--txtl);margin-bottom:1px">'+totLbl+'</div><div style="font-size:20px;font-weight:800;color:var(--pri)">'+ev.total+'</div></div>';
   if(totAvg!==null&&idxs.length>1)h+='<div style="text-align:center;padding:8px 16px;background:var(--bg);border-radius:8px;"><div style="font-size:10px;color:var(--txtl);margin-bottom:1px">기간 평균</div><div style="font-size:20px;font-weight:800;color:var(--pri2)">'+totAvg+'</div></div>';
   if(ev.grade||ev.rank==='신규')h+='<span class="eval-grade-badge '+grCls+'">'+(ev.grade||'신규')+'</span>';
   h+='</div>';
   h+=evalPeriodBarHTML(sEvalPeriod,sEvalMonth);
+  if(evalYear===2026)h+='<div style="font-size:11px;color:var(--txtl);margin-bottom:8px;padding:4px 8px;background:#fff8e1;border-radius:5px;border-left:3px solid var(--acc);">⚠️ 2026년은 1~6월 데이터만 반영됩니다.</div>';
   h+='<div class="eval-chart-wrap" style="margin-bottom:12px">'+evalPeriodSummaryHTML([ev],idxs,true)+'<div class="eval-chart-legend">';
   h+='<span class="eval-chart-legend-item"><span class="eval-chart-legend-line" style="background:#1a3a6b"></span>합계</span>';
   h+='<span class="eval-chart-legend-item"><span class="eval-chart-legend-line" style="background:#3b82f6"></span>고객만족도</span>';
@@ -18048,8 +18150,8 @@ function rbEval(s){
   idxs.forEach(i=>{const cs=ev.cs[i],co=ev.co[i];const t=(cs!==null&&co!==null&&!isNaN(cs)&&!isNaN(co))?Math.round((cs+co)*10)/10:null;h+='<td class="'+cls_t(t)+'"><strong>'+fmt(t)+'</strong></td>';});
   h+='</tr></tbody></table></div></div>';
   dp.innerHTML=h;
-  dp.querySelectorAll('.eval-period-btn').forEach(btn=>{btn.addEventListener('click',()=>{sEvalPeriod=btn.dataset.period;rbEval(s);});});
-  dp.querySelectorAll('.eval-month-pill').forEach(btn=>{btn.addEventListener('click',()=>{sEvalMonth=parseInt(btn.dataset.month);rbEval(s);});});
+  dp.querySelectorAll('.eval-period-btn:not(.eval-year-btn)').forEach(btn=>{btn.addEventListener('click',()=>{sEvalPeriod=btn.dataset.period;rbEval(s);});});
+  dp.querySelectorAll('.eval-month-pill').forEach(btn=>{btn.addEventListener('click',()=>{sEvalPeriod='month';sEvalMonth=parseInt(btn.dataset.month);rbEval(s);});});
 }function switchPage(p){
   ['store','area','spec','trend-all','eval'].forEach(x=>{document.getElementById('page-'+x).classList.toggle('show',x===p);document.getElementById('menu-'+x).classList.toggle('active',x===p);});
   if(p==='area')renderAreaAll();
